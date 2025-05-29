@@ -106,11 +106,14 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="buttons padd-15">
-                                        <a href="RESUME.pdf" class="btn">Download CV</a>
-                                        <a href="#contact" class="btn engagez moi">Hire me</a>
-                                    </div>
-                                </div>
+                                    <div class="buttons padd-15" style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="resumeamadousow.pdf" class="btn">Download resume</a>
+        <a href="#contact" class="btn engagez-moi">hire me</a>
+        <button class="btn" onclick="openModal('modal-projets')">See my projects in detail</button>
+        <button class="btn" onclick="openModal('modal-competences')">My key skills & professional objectives</button>
+    </div>
+</div>
+
                             </div>
                             <div class="skills padd-15">
                                 <div class="row">
@@ -258,6 +261,49 @@
                             </div>
                         </div>
                         
+<div id="modal-projets" class="custom-modal">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closeModal('modal-projets')">Close ✖</button>
+    <h3>My projects in detail</h3>
+    <p>Here are just a few of the projects I've worked on and participated in :</p>
+    <ul style="text-align: left; padding-left: 1.2rem;">
+      <li><strong>🎮 GreenQuest :</strong>interactive game with connected figurines (JS, Arduino, Unity).</li>
+      <li><strong>🧠 The Labyrinth:</strong> escape-style mini-game with riddle (Unity + C#).</li>
+      <li><strong>📱 Flexibook :</strong> mobile online appointment scheduling app connected to Firebase.</li>
+      <li><strong>🌐 Multimedia Store :</strong>e-commerce website.</li>
+      <li><strong>🔐 Network administration interface :</strong> anomaly detection via Python and SNMP scripts.</li>
+      <li><strong>🤖 Metrology system :</strong> real-time image processing with Halcon (university project).</li>
+    </ul>
+    <p>👉 <a href="#contact">Contact me</a> if you want to know more or test one of these projects.</p>
+  </div>
+</div>
+
+<!-- Modal Compétences & Objectifs -->
+<div id="modal-competences" class="custom-modal">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closeModal('modal-competences')">Close ✖</button>
+    <h3>My key skills & professional objectives</h3>
+    <h4>🔧 Core technical skills :</h4>
+    <ul style="text-align: left; padding-left: 1.2rem;">
+      <li><strong>Development:</strong> Python, C++, Java, JS, Flutter, PHP, MySQL</li>
+      <li><strong>Front-end :</strong> HTML, CSS, Bootstrap, React (in progress), Tailwind</li>
+      <li><strong>Back-end :</strong> Node.js, Express, Firebase, API REST</li>
+      <li><strong>Mobile & IA :</strong> Flutter, TensorFlow, OpenCV</li>
+      <li><strong>Networks & Systems :</strong> Linux, Network security, Shell script</li>
+    </ul>
+    <h4>🎯 Professional objectives :</h4>
+    <p>
+      I would like to join an innovative company to work on :
+    </p>
+    <ul style="text-align: left; padding-left: 1.2rem;">
+      <li>🧠 artificial intelligence or data projects</li>
+      <li>📱 mobile and interactive multimedia solutions</li>
+      <li>🔗 integration of connected and IoT systems</li>
+    </ul>
+    <p>I'm motivated to learn, grow, and contribute to high-impact products. 💪</p>
+  </div>
+</div>
+
         </section>
             
         <section class="service section" id="service">
@@ -412,7 +458,7 @@
         <div class="portfolio-btn">
             <button class="btn-see-more"
                 onclick="openPopup(this)"
-                data-image="./quest.png"
+                data-image="./greenquest.gif"
                 data-title="Description: Creation of an interactive game on environmental protection"
             >
                 See more
@@ -668,7 +714,14 @@
     });
 </script>
 
-
+<script>
+function openModal(id) {
+  document.getElementById(id).style.display = "flex";
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+</script>
 
 
 </body>
