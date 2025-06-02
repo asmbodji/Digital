@@ -405,91 +405,101 @@
 </div>
         </section>
 
-        <section class="portfolio section" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Portfolio</h2>
+         <section class="portfolio section" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+
+        <!-- Filtres -->
+        <div class="portfolio-filter padd-15">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="ia">Machine Vision</button>
+            <button class="filter-btn" data-filter="jeu">Game</button>
+        </div>
+
+        <!-- Projets -->
+        <div class="row portfolio-items">
+            <!-- Projet 1 - Web -->
+            <div class="portfolio-item web">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <img src="./im1.jpg" alt="Projet BTS">
+                    </div>
+                    <h3>My BTS project: Creation of an e-commerce website for a company</h3>
+                    <div class="portfolio-btn">
+                        <button class="btn-see-more"
+                                onclick="openPopup(this)"
+                                data-image="./im1.jpg"
+                                data-title="My BTS project: Creation of an e-commerce website for a company">
+                            See more
+                        </button>
                     </div>
                 </div>
-                <div class="row portfolio-items">
-                    <!-- Projet 1 -->
-                    <!-- Projet 1 -->
-<div class="portfolio-item">
-    <div class="portfolio-item-inner shadow-dark">
-        <div class="portfolio-img">
-            <img src="./im1.jpg" alt="Projet BTS">
-        </div>
-        <h3>My BTS project: Creation of an e-commerce website for a company</h3>
-        <div class="portfolio-btn">
-            <button class="btn-see-more"
-                onclick="openPopup(this)"
-                data-image="./im1.jpg"
-                data-title="My BTS project: Creation of an e-commerce website for a company"
-            >
-            See more
-            </button>
-        </div>
-    </div>
-</div>
-<div class="portfolio-item">
-    <div class="portfolio-item-inner shadow-dark">
-        <div class="portfolio-img">
-            <img src="./imge.png" alt="Projet BTS">
-        </div>
-        <h3>My tutored project in vision for industrial robotics</h3>
-        <div class="portfolio-btn">
-            <button class="btn-see-more"
-                onclick="openPopup(this)"
-                data-image="./imge.png"
-                data-title="Description: Development of Halcon-based metrology systems"
-            >
-                See more
-            </button>
-        </div>
-    </div>
-</div>
-<div class="portfolio-item">
-    <div class="portfolio-item-inner shadow-dark">
-        <div class="portfolio-img">
-            <img src="./rhiz.png" alt="Projet BTS">
-        </div>
-        <h3>My Master's project: GreenQuest, interactive games (in progress)</h3>
-        <div class="portfolio-btn">
-            <button class="btn-see-more"
-                onclick="openPopup(this)"
-                data-image="./greenquest.gif"
-                data-title="Description: Creation of an interactive game on environmental protection"
-            >
-                See more
-            </button>
-        </div>
-    </div>
-</div>
-
-<!-- Projet 2 -->
-<div class="portfolio-item">
-    <div class="portfolio-item-inner shadow-dark">
-        <div class="portfolio-img video">
-            <video controls>
-                <source src="./video.mp4" type="video/mp4">
-            </video>
-        </div>
-        <h3>My Master project: Mobile application for online booking</h3>
-        <div class="portfolio-btn">
-            <button class="btn-see-more"
-                onclick="openPopup(this)"
-                data-image="./flex.png"
-                data-title="My Master project: Mobile application for online booking"
-            >
-                See more
-            </button>
-        </div>
-    </div>
-</div>
-
             </div>
-        </section>
+
+            <!-- Projet 2 - VR -->
+            <div class="portfolio-item ia">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <img src="./imge.png" alt="Projet IA">
+                    </div>
+                    <h3>My tutored project in vision for industrial robotics</h3>
+                    <div class="portfolio-btn">
+                        <button class="btn-see-more"
+                                onclick="openPopup(this)"
+                                data-image="./imge.png"
+                                data-title="Description: Development of Halcon-based metrology systems">
+                            See more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 - Jeu -->
+            <div class="portfolio-item jeu">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <img src="./rhiz.png" alt="Projet Jeu">
+                    </div>
+                    <h3>My Master's project: GreenQuest, interactive games (in progress)</h3>
+                    <div class="portfolio-btn">
+                        <button class="btn-see-more"
+                                onclick="openPopup(this)"
+                                data-image="./greenquest.gif"
+                                data-title="Description: Creation of an interactive game on environmental protection">
+                            See more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 - App -->
+            <div class="portfolio-item app">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img video">
+                        <video controls>
+                            <source src="./video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3>My Master project: Mobile application for online booking</h3>
+                    <div class="portfolio-btn">
+                        <button class="btn-see-more"
+                                onclick="openPopup(this)"
+                                data-image="./flex.png"
+                                data-title="My Master project: Mobile application for online booking">
+                            Voir plus
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         
         
         </section>
@@ -521,6 +531,11 @@
                         <div class="icon"><i class="fa fa-envelope"></i></div>
                         <h4>Email</h4>
                         <p>asmbodj@hotmail.com</p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-clock"></i></div>
+                        <h4>Availability</h4>
+                        <p>Mon - Fri : 9am - 5pm </p>
                     </div>
                 </div>
         
@@ -722,7 +737,29 @@ function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
 </script>
+<script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const items = document.querySelectorAll(".portfolio-item");
 
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+
+            // Bouton actif
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            // Affichage
+            items.forEach(item => {
+                if (filter === "all" || item.classList.contains(filter)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
