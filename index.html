@@ -24,7 +24,26 @@
 
 </head>
 <body>
-    
+    <!-- Apprenticeship Banner -->
+<div id="alternance-banner" class="alternance-banner">
+    <div class="banner-content">
+        <span class="banner-close" onclick="closeBanner()">×</span>
+        <div class="banner-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="banner-text">
+            <h3>🔍 I'm looking for an apprenticeship!</h3>
+            <p><strong>IT Project Manager Assistant</strong> - Schedule: 3 weeks company / 1 week school</p>
+            <a href="#contact" class="btn-banner">Contact Me</a>
+        </div>
+    </div>
+</div>
+
+<!-- Floating button to reopen the banner -->
+<div id="banner-reopen" class="banner-reopen-btn" onclick="showBanner()">
+    <i class="fas fa-briefcase"></i>
+    <span>Apprenticeship</span>
+</div>
        <div class="main-container">
      <div class="aside">
     <div class="logo">
@@ -56,11 +75,13 @@
                 <div class="home-info">
                     <h3 class="hello">Hello, my name is <span class="name">Amadou Sow Mbodji</span></h3>
                     <h3 class="mon-domaine">I am a <span class="typing">Industrial IT and Industrial Vision Technician.</span></h3>
-                    <p>💻 Motivated, autonomous, and versatile IT professional, I aim to leverage my skills in web development, networking, and other IT domains to serve your company. With solid training validated up to Master's level 1 and several completed technical projects, I am confident in my ability to bring real added value and become a major asset to your teams.</p>
+                    <p>💻 IT professional, motivated, autonomous, and versatile, I wish to leverage my skills in web development, networking, and other IT domains for your company. With solid training validated up to Master's level 1 and several technical projects completed, I am convinced I can bring real added value and become a major asset for your teams.
+                        
+                        </p>
                     <a href="#contact" class="btn engagez-moi">Hire Me</a>
                 </div>
                 <div class="home-img padd-15">
-                    <img src="pho.png" alt="Amadou Sow Mbodji">
+                    <img src="pho.png"
                 </div>
             </div>
         </div>
@@ -84,12 +105,12 @@
                             <div class="about-text padd-15">
                                 <h3>I am Amadou Sow Mbodji, <span> passionate about IT, web development, and AI. 💻📱</span></h3>
                                 <p>
-  I pursued technical training at the Senegal/Japan CFPT, where I obtained a BTI in electromechanics followed by a BTS in industrial IT and networks. 
-  I then validated two professional licenses: one in network administration and security, and another in vision for industrial robotics at the University of Nîmes. 
+  I received technical training at CFPT Senegal/Japan, where I obtained a BTI in electromechanics and then a BTS in industrial IT and networks.
+  I then validated two professional licenses: one in network administration and security, and another in vision for industrial robotics at the University of Nîmes.
 </p>
 
 <div class="highlight-box">
-  I hold a Master's degree (M1) in Information Technology – Multimedia Products and Services, which I successfully completed. I initially planned to continue into the second year (M2) in the TDM stream, but I was directed towards another specialization (CCAM) that did not align with my academic background or my career goals, so I chose not to continue. I am seeking a permanent position (CDI) in the IT field, with a particular interest in web technologies.
+  Soon to be a Master's student in Information Systems Expert at ISITECH, I wish to integrate an apprenticeship as an IT project manager assistant. Passionate about data, development, and artificial intelligence, I have a solid foundation in programming (Python, Power BI, automation) and experience in image processing and data analysis. My goal is to contribute to the success and innovation of IT projects while strengthening my skills on the Power Platform and AI integrations.
 </div>
 
                             </div>
@@ -98,7 +119,7 @@
                             <div class="personal-info padd-15">
                                 <div class="row">
                                     <div class="info-item padd-15">
-                                        <p>Birth Date: <span>January 12, 1998</span></p>
+                                        <p>Birthdate: <span>January 12, 1998</span></p>
                                     </div>
                                     <div class="info-item padd-15">
                                         <p>Age: <span>26</span></p>
@@ -118,7 +139,7 @@
                                 </div>
                              <div class="row">
     <div class="buttons padd-15" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-        <a href="CURRICULUMAMADOUSOW.pdf" class="btn">Download CV</a>
+        <a href="CVAL.pdf" class="btn">Download CV</a>
         <a href="#contact" class="btn engagez-moi">Hire Me</a>
         <button class="btn" onclick="openModal('modal-projets')">My Projects</button>
         <button class="btn" onclick="openModal('modal-competences')">Skills</button>
@@ -182,7 +203,6 @@
                         </div>
                         <!-- Mastered Software -->
 
-
                        <div class="formation-section padd-15">
     <h3 class="title">
         Education
@@ -190,13 +210,18 @@
     </h3>
     <div class="formation-content animated-collapse" id="formation-box">
         <div class="formation-card">
-
+         <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2025 - 2026</h3>
+                <h4 class="timeline-title">Master 1 Information Systems Engineering </h4>
+                <p class="timeline-text">At ISITECH 🇫🇷</p>
+            </div>
             <!-- Master 1 -->
             <div class="timeline-item">
                 <div class="circle-dot"></div>
                 <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2025</h3>
                 <h4 class="timeline-title">
-                    Master 1 Information Technology Products & Multimedia Services
+                    Master 1 Information Technology Multimedia Products & Services
                     <span class="tag">M1 validated</span>
                     <span class="info-icon" onclick="toggleInfo()">ℹ️</span>
                 </h4>
@@ -204,11 +229,11 @@
                 
                 <!-- Hidden info box -->
                 <div id="info-box" class="info-box">
-                    I planned to continue into Master 2 TDM, but I was assigned to the CCAM track, which did not align with my career project or my academic background. That's why I did not pursue the M2.
+                    I planned to continue with a Master 2 TDM, but I was assigned to the CCAM track, which did not match my professional project nor my academic background. That's why I did not pursue the M2.
                 </div>
             </div>
 
-            <!-- Licence Pro Vision -->
+            <!-- License Pro Vision -->
             <div class="timeline-item">
                 <div class="circle-dot"></div>
                 <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2024</h3>
@@ -216,7 +241,7 @@
                 <p class="timeline-text">At the University of Nîmes 🇫🇷</p>
             </div>
 
-            <!-- Licence Pro Admin -->
+            <!-- License Pro Admin -->
             <div class="timeline-item">
                 <div class="circle-dot"></div>
                 <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2023</h3>
@@ -384,7 +409,236 @@
     max-width: 100%;
     box-sizing: border-box;
 }
+/* Centered Apprenticeship Banner */
+.alternance-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: linear-gradient(135deg, #e63946 0%, #c1121f 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(230, 57, 70, 0.5);
+    z-index: 10000;
+    max-width: 500px;
+    width: 90%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
+.alternance-banner.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.banner-close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #e63946;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.banner-close:hover {
+    background: white;
+    transform: scale(1.1) rotate(90deg);
+}
+
+.banner-icon {
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    animation: bounceIcon 2s infinite;
+}
+
+.banner-text {
+    flex: 1;
+}
+
+.banner-text h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.banner-text p {
+    margin: 0 0 20px 0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.btn-banner {
+    display: inline-block;
+    background: white;
+    color: #e63946;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Reopen button */
+.banner-reopen-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #e63946 0%, #c1121f 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    animation: pulseReopen 2s infinite;
+}
+
+.banner-reopen-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.6);
+}
+
+.banner-reopen-btn i {
+    font-size: 1.2rem;
+}
+
+.banner-reopen-btn span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Background overlay */
+.banner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.banner-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animations */
+@keyframes bounceIcon {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes pulseReopen {
+    0% {
+        box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+    }
+    50% {
+        box-shadow: 0 6px 25px rgba(230, 57, 70, 0.7);
+    }
+    100% {
+        box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .alternance-banner {
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .banner-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    
+    .banner-text h3 {
+        font-size: 1.2rem;
+    }
+    
+    .banner-text p {
+        font-size: 0.95rem;
+    }
+    
+    .banner-reopen-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 18px;
+    }
+    
+    .banner-reopen-btn span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-reopen-btn span {
+        display: none;
+    }
+    
+    .banner-reopen-btn {
+        padding: 15px;
+    }
+}
 .centres-interet-container {
     width: 100%;
     max-width: 100%;
@@ -412,7 +666,7 @@
     max-width: 100%;
 }
 
-/* Ensure all elements respect limits */
+/* Ensure all elements respect boundaries */
 .padd-15 {
     box-sizing: border-box;
 }
@@ -551,7 +805,7 @@
                         
                         <div class="diplome-section padd-15">
                             <h3 class="title">
-                                Diploma
+                                Diplomas
                                 <button id="toggle-diplome" class="btn-diplome-toggle">Show ▼</button>
                             </h3>
                             <div class="diplome-content animated-collapse" id="diplome-box">
@@ -569,7 +823,7 @@
                                         <div class="circle-dot"></div>
                                         <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2022</h3>
                                         <h4 class="timeline-title">
-                                            Two-year technical degree (BTS) in Industrial IT and Networks
+                                            Two-year technical degree in Industrial IT and Networks
                                             <span class="mention mention-assezbien">Fairly Good Mention</span>
                                         </h4>
                                         <p class="timeline-text">At the Senegal-Japan Professional and Technical Training Center 🇸🇳</p>
@@ -628,7 +882,7 @@
 <div id="modal-competences" class="custom-modal">
   <div class="modal-content">
     <button class="close-modal" onclick="closeModal('modal-competences')">Close ✖</button>
-    <h3>My Key Skills & Professional Goals</h3>
+    <h3>My Key Skills & Professional Objectives</h3>
     <h4>🔧 Main Technical Skills:</h4>
     <ul style="text-align: left; padding-left: 1.2rem;">
       <li><strong>Development:</strong> Python, C++, Java, JS, Flutter, PHP, MySQL</li>
@@ -637,14 +891,14 @@
       <li><strong>Mobile & AI:</strong> Flutter, TensorFlow, OpenCV</li>
       <li><strong>Networks & Systems:</strong> Linux, Network Security, Shell script</li>
     </ul>
-    <h4>🎯 Professional Goals:</h4>
+    <h4>🎯 Professional Objectives:</h4>
     <p>
-      I want to join an innovative company to work on:
+      I wish to join an innovative company to work on:
     </p>
     <ul style="text-align: left; padding-left: 1.2rem;">
       <li>🧠 artificial intelligence or data projects</li>
       <li>📱 mobile or interactive solutions for multimedia</li>
-      <li>🔗 connected systems and IoT integration</li>
+      <li>🔗 integration of connected systems and IoT</li>
     </ul>
     <p>I am motivated to learn, evolve, and contribute to high-impact products. 💪</p>
   </div>
@@ -674,7 +928,7 @@
                     </div>
                     <div class="interest-back">
                         <h3>🎵 Music</h3>
-                        <p>Passionate about music creation and exploring different genres. I'm interested in computer-assisted music production.</p>
+                        <p>Passionate about music creation and exploring different genres. I'm interested in computer-assisted production.</p>
                         <div class="interest-tags">
                             <span class="tag">Guitar</span>
                             <span class="tag">Production</span>
@@ -764,7 +1018,7 @@
 </section>
 
 <style>
-/* Interests Section - Subtle Version */
+/* Interests Section - Discreet Version */
 .interests {
     padding: 60px 0;
     position: relative;
@@ -784,7 +1038,7 @@
     margin-bottom: 40px;
 }
 
-/* Card container */
+/* Cards container */
 .interests-container {
     display: flex;
     flex-wrap: wrap;
@@ -956,7 +1210,97 @@
 .interest-card:nth-child(3) {
     animation-delay: 0.3s;
 }
+/* QR Code Section - Instead of the video */
+.qr-section-main {
+    text-align: center;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(230, 57, 70, 0.15);
+    width: 100%;
+}
 
+.qr-title-main {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.qr-instruction-main {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qr-container-main {
+    display: inline-block;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 3px solid #e63946;
+}
+
+.qr-code-main {
+    width: 220px;
+    height: 220px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #e63946;
+}
+
+.qr-code-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.qr-link-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 15px;
+}
+
+.qr-link-main {
+    color: #e63946;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.qr-link-main:hover {
+    color: #c1121f;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .qr-section-main {
+        padding: 30px 20px;
+    }
+    
+    .qr-title-main {
+        font-size: 1.3rem;
+    }
+    
+    .qr-code-main {
+        width: 180px;
+        height: 180px;
+        font-size: 1rem;
+    }
+}
 .interest-card:nth-child(4) {
     animation-delay: 0.4s;
 }
@@ -1107,7 +1451,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Click animation for mobile (alternative to hover)
     document.querySelectorAll('.interest-card').forEach(card => {
         card.addEventListener('click', function() {
-            // On mobile, we can add an active class for animation
+            // On mobile, add an active class for animation
             if (window.innerWidth <= 768) {
                 this.classList.toggle('active');
             }
@@ -1129,7 +1473,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa fa-mobile-alt"></i>
                             </div>
                             <h4>Web Design</h4>
-                            <p>Frontend development of a website, meaning the design of the graphical user interface, page design</p>
+                            <p>Doing frontend development of a website, i.e., designing the graphical user interface, page design</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1138,7 +1482,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-laptop-code"></i>
                             </div>
                             <h4>Programming</h4>
-                            <p>Working with various programming languages such as JAVASCRIPT, JAVA, C, SQL etc...</p>
+                            <p>Manipulating various programming languages such as JAVASCRIPT, JAVA, C, SQL etc...</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1147,7 +1491,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-brands fa-flutter"></i>
                             </div>
                             <h4>Mobile Development</h4>
-                            <p>Mobile application development with Flutter.</p>
+                            <p>Mobile application development with flutter.</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1156,7 +1500,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-eye-low-vision"></i>
                             </div>
                             <h4>Machine Vision & Image Processing</h4>
-                            <p>Control using cameras associated with appropriate image processing.</p>
+                            <p>Controlling using cameras associated with adapted image processing.</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1174,7 +1518,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-database"></i>
                             </div>
                             <h4>Database Management</h4>
-                            <p>Mastery of SQL and relational systems (MySQL, PostgreSQL), with skills in data modeling, query optimization, and effective database administration.</p>
+                            <p>Mastery of SQL and relational systems (MySQL, PostgreSQL), with skills in data modeling, query optimization, and efficient database administration.</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1183,7 +1527,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-wrench"></i>
                             </div>
                             <h4>IT Maintenance</h4>
-                            <p>Diagnose a computer failure, specifically on a central unit, and repair it if possible</p>
+                            <p>Diagnosing a failure on a computer, more precisely on a central unit, and repairing it if possible</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1192,7 +1536,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-brands fa-windows"></i>
                             </div>
                             <h4>Windows, Linux Operating System Installation</h4>
-                            <p>Perform necessary manipulations to install Windows with an active license. Install Linux with Windows in dual boot</p>
+                            <p>Performing necessary manipulations to install Windows with an active license. Installing Linux with Windows in dual boot</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1201,7 +1545,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-network-wired"></i>
                             </div>
                             <h4>Networking, System Administration</h4>
-                            <p>Establish connection between all workstations in an establishment</p>
+                            <p>Establishing a connection between all workstations in an establishment</p>
                         </div>
                     </div>
                 </div>
@@ -1271,7 +1615,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="portfolio-item ma">
                 <div class="portfolio-item-inner shadow-dark">
                     <div class="portfolio-img">
-                        <img src="./imge.png" alt="MV project">
+                        <img src="./imge.png" alt="mv project">
                     </div>
                     <h3>My tutored project in professional license VRI</h3>
                     <div class="portfolio-btn">
@@ -1287,12 +1631,13 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
             <!-- Project 3 - Game -->
-            <div class="portfolio-item ia">
+            <!-- Project 3 - Game -->
+<div class="portfolio-item ia">
     <div class="portfolio-item-inner shadow-dark">
         <div class="portfolio-img">
             <img src="./room.png" alt="AI Project">
         </div>
-        <h3>Personal project: Roomify, AI-assisted decoration app with AR</h3>
+        <h3>Personal Project: Roomify, AI-assisted decoration app with AR</h3>
         <div class="portfolio-btn">
             <button class="btn-see-more"
                     onclick="openPopup(this)"
@@ -1314,12 +1659,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             <source src="./video.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>My Master Project: Mobile appointment booking application</h3>
+                    <h3>My Master's Project: Mobile app for online appointments</h3>
                     <div class="portfolio-btn">
                         <button class="btn-see-more"
                                 onclick="openPopup(this)"
                                 data-image="./flex.png"
-                                data-title="My Master Project: Mobile appointment booking application">
+                                data-title="My Master's Project: Mobile app for online appointments">
                             See More
                         </button>
                     </div>
@@ -1364,18 +1709,29 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="row">
             <div class="project-content">
                 <!-- Presentation video -->
-                <div class="project-video padd-15">
-                    <div class="video-container">
-                        <video controls poster="./room.png" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                            <source src="./roomify.mp4" type="video/mp4">
-                            Your browser does not support video playback.
-                        </video>
-                    </div>
-                </div>
+               <!-- QR Code instead of the video -->
+<div class="project-video padd-15">
+    <div class="qr-section-main">
+        <h3 class="qr-title-main">📱 Scan to see the Roomify demo</h3>
+        <p class="qr-instruction-main">
+            Scan this QR code with your smartphone to discover the complete project demonstration
+        </p>
+        
+        <div class="qr-container-main">
+    <div class="qr-code-main">
+        <img src="./qrcode-roomify.png" alt="QR Code Roomify - Scan to see the complete demo">
+    </div>
+</div>
+        
+        <p class="qr-link-text">
+            Or <a href="https://youtu.be/VqGsNbsqjm8" class="qr-link-main">click here to watch the video</a>
+        </p>
+    </div>
+</div>
                 
                 <!-- Project description -->
                 <div class="project-info padd-15">
-                    <h3>🚀 Roomify - AI-Assisted Decoration Application</h3>
+                    <h3>🚀 Roomify - AI-Assisted Decoration App</h3>
                     <div class="project-status">
                         <span class="status-badge">In Development</span>
                         <span class="date-start">Started in September 2025</span>
@@ -1386,9 +1742,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         
                         <h4>🎯 Main Features:</h4>
                         <ul>
-                            <li>📸 AI analysis of space photos</li>
+                            <li>📸 Photo analysis of spaces with AI</li>
                             <li>🎨 Personalized decoration suggestions</li>
-                            <li>👁️ Augmented reality visualization</li>
+                            <li>👁️ Visualization in augmented reality</li>
                             <li>🛒 E-commerce integration</li>
                             <li>📱 Cross-platform mobile application</li>
                         </ul>
@@ -1426,8 +1782,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                         
                         <div class="project-cta">
-                            <p><strong>Interested in this project?</strong> Don't hesitate to contact me to discuss it!</p>
-                            <a href="#contact" class="btn engagez-moi">Let's Discuss!</a>
+                            <p><strong>Interested in this project?</strong> Feel free to contact me to discuss it!</p>
+                            <a href="#contact" class="btn engagez-moi">Let's Talk!</a>
                         </div>
                     </div>
                 </div>
@@ -1467,7 +1823,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="contact-card padd-15" id="availability-card">
   <div class="icon"><i class="fa fa-clock"></i></div>
   <h4>Availability</h4>
-  <p>Click to see</p>
+  <p>Click to view</p>
 </div>
 
 <!-- Calendar popup -->
@@ -1625,7 +1981,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     ];
   
-    // Add markers to the map
+    // Add markers on the map
     schools.forEach(school => {
       L.marker(school.location)
         .addTo(map)
@@ -1637,9 +1993,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="portfolio-popup" class="popup-overlay">
     <div class="popup-content">
         <span class="close-btn" onclick="closePopup()">&times;</span>
-        <img id="popup-image" src="" alt="Project preview">
+        <img id="popup-image" src="" alt="Project Preview">
         <h3 id="popup-title">Project Title</h3>
-        <p id="popup-description">Detailed project description coming here.</p>
+        <p id="popup-description">Detailed project description to come here.</p>
     </div>
 </div>
 
@@ -1652,8 +2008,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function openPopup(button) {
     const imageSrc = button.getAttribute("data-image");
     const title = button.getAttribute("data-title");
-    const type = button.getAttribute("data-type"); // Get type (image or video)
-    const videoSrc = button.getAttribute("data-video"); // Get video path
+    const type = button.getAttribute("data-type"); // Gets the type (image or video)
+    const videoSrc = button.getAttribute("data-video"); // Gets the video path
 
     // Clear previous content
     popupImage.style.display = 'none';
@@ -1691,28 +2047,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const descriptions = {
         "My BTS Project: Creation of an e-commerce website for a company":
             "Complete online sales site with shopping cart, customer account, admin area and MySQL database.",
-        "My Master Project: Mobile appointment booking application":
+        "My Master's Project: Mobile app for online appointments":
             "Flutter app allowing users to book a time slot in hotels or services.",
         "Description: Development of metrology systems based on Halcon":
             "Design of a metrology system for dimensional control of industrial parts using Halcon software. Implementation of Halcon scripts for image analysis and defect identification.",
         "Description: Roomify – AI-assisted decoration app with augmented reality integration. (in progress)":
-            "Roomify is an AI-assisted decoration application. The user uploads a photo of their space, and the AI suggests personalized decoration ideas. The integration of augmented reality will provide an immersive experience by allowing visualization of arrangements directly in the real environment."
+            "Roomify is an AI-assisted decoration application. The user uploads a photo of their space, and the AI suggests personalized decoration ideas. The integration of augmented reality will offer an immersive experience by allowing visualization of layouts directly in the real environment."
     };
 
     popupDescription.innerText = descriptions[title] || "Description coming soon.";
-
     popup.style.display = "flex";
 }
 
-
    function closePopup() {
-    // Remove video if it exists
+    // Remove the video if it exists
     const existingVideo = document.getElementById('popup-video');
     if (existingVideo) {
         existingVideo.remove();
     }
     
-    // Redisplay image (for other projects)
+    // Redisplay the image (for other projects)
     popupImage.style.display = 'block';
     
     popup.style.display = "none";
@@ -1725,7 +2079,7 @@ document.addEventListener('click', function(event) {
 });
 </script>
 <script>
-    // For Diploma section
+    // For the Diplomas section
     document.getElementById('toggle-diplome')?.addEventListener('click', () => {
         const box = document.getElementById('diplome-box');
         box.classList.toggle('show');
@@ -1733,7 +2087,7 @@ document.addEventListener('click', function(event) {
             box.classList.contains('show') ? "Hide ▲" : "Show ▼";
     });
 
-    // For Education section
+    // For the Education section
     document.getElementById('toggle-formation')?.addEventListener('click', () => {
         const box = document.getElementById('formation-box');
         box.classList.toggle('show');
@@ -1877,7 +2231,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (navToggler && aside) {
         navToggler.addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevent immediate closure
+            e.stopPropagation(); // Prevents immediate closing
             aside.classList.toggle('open');
             document.body.classList.toggle('aside-open');
             console.log('Menu clicked, open:', aside.classList.contains('open')); // Debug
@@ -1938,7 +2292,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </div>
 
-<!-- Overlay to close menu -->
+<!-- Overlay to close the menu -->
 <div class="menu-overlay" id="menuOverlay" onclick="closeFloatingMenu()"></div>
 <script>
     // Enhanced version with finer scroll management
@@ -2009,7 +2363,7 @@ function handleScroll() {
     
     lastScrollTop = scrollTop;
     
-    // Redisplay menu after scroll stop if at top
+    // Redisplay menu after scroll stop if at the top
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
         if (scrollTop < 50) {
@@ -2055,11 +2409,69 @@ document.addEventListener('DOMContentLoaded', function() {
     showFloatingMenu();
 });
 
-// Redisplay menu when touching screen (for mobile)
+// Redisplay menu when touching the screen (for mobile)
 document.addEventListener('touchstart', function() {
     showFloatingMenu();
 });
 </script>
-
+<script>
+    // Management of the centered apprenticeship banner
+document.addEventListener('DOMContentLoaded', function() {
+    const banner = document.getElementById('alternance-banner');
+    const reopenBtn = document.getElementById('banner-reopen');
+    
+    // Create overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'banner-overlay';
+    document.body.appendChild(overlay);
+    
+    // Function to display the banner
+    window.showBanner = function() {
+        if (banner) {
+            banner.classList.add('show');
+            overlay.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevents scrolling
+        }
+    };
+    
+    // Function to close the banner
+    window.closeBanner = function() {
+        if (banner) {
+            banner.classList.remove('show');
+            overlay.classList.remove('show');
+            document.body.style.overflow = ''; // Re-enables scrolling
+            
+            // Show the reopen button after closing
+            setTimeout(() => {
+                if (reopenBtn) {
+                    reopenBtn.style.display = 'flex';
+                }
+            }, 300);
+        }
+    };
+    
+    // Close by clicking on the overlay
+    overlay.addEventListener('click', closeBanner);
+    
+    // Close with the Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && banner.classList.contains('show')) {
+            closeBanner();
+        }
+    });
+    
+    // Display automatically after 3 seconds
+    setTimeout(() => {
+        showBanner();
+        
+        // Close automatically after 10 seconds
+        setTimeout(() => {
+            if (banner.classList.contains('show')) {
+                closeBanner();
+            }
+        }, 10000);
+    }, 3000);
+});
+</script>
 </body>
 </html>
