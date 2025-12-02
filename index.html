@@ -22,246 +22,148 @@
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-</head>
-<body>
-    <!-- Apprenticeship Banner -->
-<div id="alternance-banner" class="alternance-banner">
-    <div class="banner-content">
-        <span class="banner-close" onclick="closeBanner()">×</span>
-        <div class="banner-icon">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="banner-text">
-            <h3>🔍 I'm looking for an apprenticeship!</h3>
-            <p><strong>IT Project Manager Assistant</strong> - Schedule: 3 weeks company / 1 week school</p>
-            <a href="#contact" class="btn-banner">Contact Me</a>
-        </div>
-    </div>
-</div>
-
-<!-- Floating button to reopen the banner -->
-<div id="banner-reopen" class="banner-reopen-btn" onclick="showBanner()">
-    <i class="fas fa-briefcase"></i>
-    <span>Apprenticeship</span>
-</div>
-       <div class="main-container">
-     <div class="aside">
-    <div class="logo">
-        <a href="#"><span>A</span>SM</a>
-    </div>
-    <div class="nav-toggler">
-        <span></span>
-    </div>
-    
-    <!-- ADD: Photo and info for mobile menu -->
-    <div class="profile-mobile">
-        <img src="pho.png" alt="Amadou Sow Mbodji">
-        <h3>Amadou Sow Mbodji</h3>
-        <p>Industrial IT Technician</p>
-    </div>
-    
-    <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-        <li><a href="#service"><i class="fa fa-list"></i>Skills</a></li>
-        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-    </ul>
-</div>
-     <div class="main-content">
-     <section class="home section" id="home">
-        <div class="container">
-            <div class="row">
-                <div class="home-info">
-                    <h3 class="hello">Hello, my name is <span class="name">Amadou Sow Mbodji</span></h3>
-                    <h3 class="mon-domaine">I am a <span class="typing">Industrial IT and Industrial Vision Technician.</span></h3>
-                    <p>💻 IT professional, motivated, autonomous, and versatile, I wish to leverage my skills in web development, networking, and other IT domains for your company. With solid training validated up to Master's level 1 and several technical projects completed, I am convinced I can bring real added value and become a major asset for your teams.
-                        
-                        </p>
-                    <a href="#contact" class="btn engagez-moi">Hire Me</a>
-                </div>
-                <div class="home-img padd-15">
-                    <img src="pho.png"
-                </div>
-            </div>
-        </div>
-     </section>
-              
-     <section id="about" data-aos="fade-right" data-aos-duration="1000">
-        ...
-    </section>
-    
-
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="about-content padd-15">
-                        <div class="row">
-                            <div class="about-text padd-15">
-                                <h3>I am Amadou Sow Mbodji, <span> passionate about IT, web development, and AI. 💻📱</span></h3>
-                                <p>
-  I received technical training at CFPT Senegal/Japan, where I obtained a BTI in electromechanics and then a BTS in industrial IT and networks.
-  I then validated two professional licenses: one in network administration and security, and another in vision for industrial robotics at the University of Nîmes.
-</p>
-
-<div class="highlight-box">
-  Soon to be a Master's student in Information Systems Expert at ISITECH, I wish to integrate an apprenticeship as an IT project manager assistant. Passionate about data, development, and artificial intelligence, I have a solid foundation in programming (Python, Power BI, automation) and experience in image processing and data analysis. My goal is to contribute to the success and innovation of IT projects while strengthening my skills on the Power Platform and AI integrations.
-</div>
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="personal-info padd-15">
-                                <div class="row">
-                                    <div class="info-item padd-15">
-                                        <p>Birthdate: <span>January 12, 1998</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Age: <span>26</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Email: <span>asmbodj@hotmail.com</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Level: <span>Master's</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Phone: <span>0758864201</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>City: <span>Belfort</span></p>
-                                    </div>
-                                </div>
-                             <div class="row">
-    <div class="buttons padd-15" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-        <a href="CVAL.pdf" class="btn">Download CV</a>
-        <a href="#contact" class="btn engagez-moi">Hire Me</a>
-        <button class="btn" onclick="openModal('modal-projets')">My Projects</button>
-        <button class="btn" onclick="openModal('modal-competences')">Skills</button>
-    </div>
-</div>
-
-                            </div>
-                            <div class="skills padd-15">
-                                <div class="row">
-                                    <div class="skill-item padd-15">
-                                        <h5>C, C++</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 80%;"></div>
-                                            <div class="skill-percent">80%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>PYTHON, HTML & CSS</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 90%;"></div>
-                                            <div class="skill-percent">90%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>JAVA & JS</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 81%;"></div>
-                                            <div class="skill-percent">81%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>VBA</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 90%;"></div>
-                                            <div class="skill-percent">90%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>Flutter & Swift</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 75%;"></div>
-                                            <div class="skill-percent">75%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>PHP & MYSQL</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 90%;"></div>
-                                            <div class="skill-percent">90%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-item padd-15">
-                                        <h5>BootStrap & Wordpress</h5>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 76%;"></div>
-                                            <div class="skill-percent">76%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Mastered Software -->
-
-                       <div class="formation-section padd-15">
-    <h3 class="title">
-        Education
-        <button id="toggle-formation" class="btn-formation-toggle">Show ▼</button>
-    </h3>
-    <div class="formation-content animated-collapse" id="formation-box">
-        <div class="formation-card">
-         <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2025 - 2026</h3>
-                <h4 class="timeline-title">Master 1 Information Systems Engineering </h4>
-                <p class="timeline-text">At ISITECH 🇫🇷</p>
-            </div>
-            <!-- Master 1 -->
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2025</h3>
-                <h4 class="timeline-title">
-                    Master 1 Information Technology Multimedia Products & Services
-                    <span class="tag">M1 validated</span>
-                    <span class="info-icon" onclick="toggleInfo()">ℹ️</span>
-                </h4>
-                <p class="timeline-text">At the University of Marie & Louis Pasteur 🇫🇷</p>
-                
-                <!-- Hidden info box -->
-                <div id="info-box" class="info-box">
-                    I planned to continue with a Master 2 TDM, but I was assigned to the CCAM track, which did not match my professional project nor my academic background. That's why I did not pursue the M2.
-                </div>
-            </div>
-
-            <!-- License Pro Vision -->
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2024</h3>
-                <h4 class="timeline-title">Bachelor degree in Vision for Industrial Robotics</h4>
-                <p class="timeline-text">At the University of Nîmes 🇫🇷</p>
-            </div>
-
-            <!-- License Pro Admin -->
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2023</h3>
-                <h4 class="timeline-title">Bachelor degree in Network Administration and Security</h4>
-                <p class="timeline-text">At the Multinational Higher School of Telecom 🇸🇳</p>
-            </div>
-
-            <!-- BTS -->
-            <div class="timeline-item">
-                <div class="circle-dot"></div>
-                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2022</h3>
-                <h4 class="timeline-title">2nd year BTS in Industrial IT and Networks</h4>
-                <p class="timeline-text">At the Senegal-Japan Professional and Technical Training Center 🇸🇳</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- CSS to add -->
 <style>
+    /* Styles for the enhanced map only */
+    #map {
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border: 2px solid rgba(230, 57, 70, 0.2);
+        z-index: 1;
+    }
+    
+    /* Custom markers */
+    .custom-school-marker {
+        transition: all 0.3s ease;
+    }
+    
+    .custom-school-marker .marker-pin {
+        transition: all 0.3s ease;
+    }
+    
+    .leaflet-marker-icon:hover .marker-pin {
+        transform: rotate(-45deg) scale(1.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    
+    /* Custom popups */
+    .leaflet-popup-content-wrapper {
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        border: 2px solid #e63946;
+    }
+    
+    .leaflet-popup-content {
+        margin: 0;
+        padding: 0;
+        font-family: inherit;
+    }
+    
+    .school-popup {
+        max-width: 300px;
+    }
+    
+    .popup-header {
+        background: linear-gradient(135deg, #e63946, #c1121f);
+        color: white;
+        padding: 15px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .popup-header h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .popup-body {
+        padding: 15px;
+        background: #fff;
+    }
+    
+    .popup-info {
+        margin-bottom: 10px;
+    }
+    
+    .popup-info p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #333;
+    }
+    
+    .popup-info strong {
+        color: #e63946;
+    }
+    
+    .popup-diplome {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 6px;
+        margin-top: 10px;
+        border-left: 3px solid #e63946;
+    }
+    
+    .leaflet-popup-tip {
+        background: #e63946;
+    }
+    
+    /* Legend */
+    .map-legend {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 12px 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        border: 1px solid #e63946;
+        font-size: 12px;
+    }
+    
+    .map-legend h4 {
+        margin: 0 0 10px 0;
+        color: #333;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .legend-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    
+    .legend-color {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    /* Animation */
+    @keyframes pulse {
+        0% { transform: rotate(-45deg) scale(1); }
+        50% { transform: rotate(-45deg) scale(1.05); }
+        100% { transform: rotate(-45deg) scale(1); }
+    }
+    
+    .leaflet-marker-icon:hover .marker-pin {
+        animation: pulse 1s infinite;
+    }
+
+    /* Your existing styles are preserved here */
+    .highlight-box {
+  background: #f0f8ff; /* light blue */
+  border-left: 5px solid #ff002b; /* blue stripe */
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
     .tag {
         display: inline-block;
         margin-left: 10px;
@@ -659,7 +561,7 @@
     box-sizing: border-box;
 }
 
-/* Specific correction for flex elements */
+/* Specific fix for flex elements */
 .row {
     margin: 0;
     padding: 0;
@@ -671,7 +573,7 @@
     box-sizing: border-box;
 }
 
-/* Media queries to reinforce responsive */
+/* Media queries to reinforce responsive design */
 @media (max-width: 768px) {
     .interests-grid {
         width: 100%;
@@ -745,7 +647,101 @@
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0 8px 18px rgba(230, 57, 70, 0.4);
 }
+/* Style amélioré pour l'icône info */
+.info-badge {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #e63946, #ff6b6b);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(230, 57, 70, 0.3);
+    padding: 0;
+}
 
+.info-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.5);
+    background: linear-gradient(135deg, #ff6b6b, #e63946);
+}
+
+.pulse-dot {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    border: 2px solid #e63946;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation pour l'info-box */
+.info-box {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-left: 4px solid #e63946;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.info-box:before {
+    content: "💡";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    font-size: 16px;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-box.show {
+    display: block;
+    animation: slideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
     .info-box.show {
         display: block;
         animation: fadeIn 0.3s ease-in-out;
@@ -755,18 +751,6 @@
         from {opacity: 0; transform: translateY(-5px);}
         to {opacity: 1; transform: translateY(0);}
     }
-    .highlight-box {
-  background: #f0f8ff; /* light blue */
-  border-left: 5px solid #ff002b; /* blue band */
-  padding: 12px 15px;
-  margin: 15px 0;
-  border-radius: 8px;
-  font-weight: 500;
-  color: #333;
-  font-size: 15px;
-  line-height: 1.5;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
 /* To add to your CSS */
 .current-project .container {
     overflow-x: hidden;
@@ -794,14 +778,258 @@
 }
 </style>
 
-<!-- JS to add -->
-<script>
-    function toggleInfo() {
-        document.getElementById("info-box").classList.toggle("show");
-    }
-</script>
+</head>
+<body>
+    <!-- Apprenticeship Banner -->
+<div id="alternance-banner" class="alternance-banner">
+    <div class="banner-content">
+        <span class="banner-close" onclick="closeBanner()">×</span>
+        <div class="banner-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="banner-text">
+            <h3>🔍 I'm looking for an apprenticeship!</h3>
+            <p><strong>IT Project Manager Assistant</strong> - Schedule: 3 weeks company / 1 week school</p>
+            <a href="#contact" class="btn-banner">Contact me</a>
+        </div>
+    </div>
+</div>
 
+<!-- Floating button to reopen the banner -->
+<div id="banner-reopen" class="banner-reopen-btn" onclick="showBanner()">
+    <i class="fas fa-briefcase"></i>
+    <span>Apprenticeship</span>
+</div>
+       <div class="main-container">
+     <div class="aside">
+    <div class="logo">
+        <a href="#"><span>A</span>SM</a>
+    </div>
+    <div class="nav-toggler">
+        <span></span>
+    </div>
+    
+    <!-- ADD: Photo and info for mobile menu -->
+    <div class="profile-mobile">
+        <img src="pho.png" alt="Amadou Sow Mbodji">
+        <h3>Amadou Sow Mbodji</h3>
+        <p>Industrial IT Technician</p>
+    </div>
+    
+    <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#service"><i class="fa fa-list"></i>Skills</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+    </ul>
+</div>
+     <div class="main-content">
+     <section class="home section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="home-info">
+                    <h3 class="hello">Hello, my name is <span class="name">Amadou Sow Mbodji</span></h3>
+                    <h3 class="mon-domaine">I am an <span class="typing">Industrial IT and Computer Vision Technician.</span></h3>
+                    <p>💻 IT professional, motivated, autonomous, and versatile, I wish to leverage my skills in web development, networking, and other IT domains to serve your company. With a solid education validated up to Master's level and several technical projects completed, I am confident I can bring real added value and become a major asset for your teams.
                         
+                        </p>
+                    <a href="#contact" class="btn engagez-moi">Hire Me</a>
+                </div>
+                <div class="home-img padd-15">
+                    <img src="pho.png"
+                </div>
+            </div>
+        </div>
+     </section>
+              
+     <section id="about" data-aos="fade-right" data-aos-duration="1000">
+        ...
+    </section>
+    
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>I am Amadou Sow Mbodji, <span> passionate about IT, web development, and AI. 💻📱</span></h3>
+                                <p>
+  I followed a technical training at CFPT Senegal/Japan, where I obtained a BTI in electromechanics then a BTS in industrial IT and networks.
+  I then validated two professional licenses: one in network administration and security, and another in vision for industrial robotics at the University of Nîmes.
+</p>
+
+<div class="highlight-box">
+  Soon to be a Master's student in Information Systems Expert at ISITECH, I am looking to integrate an
+apprenticeship as an IT project manager assistant. Passionate about data, development, and artificial
+intelligence, I have a solid foundation in programming (Python, Power BI, automation) and experience in
+image processing and data analysis. My goal is to contribute to the success and innovation of IT projects,
+while strengthening my skills on the Power Platform and AI integrations.
+</div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="personal-info padd-15">
+                                <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p>Date of Birth: <span>January 12, 1998</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Age: <span>26</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Email: <span>asmbodj@hotmail.com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Level: <span>Master</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Phone: <span>0758864201</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>City: <span>Belfort</span></p>
+                                    </div>
+                                </div>
+                             <div class="row">
+    <div class="buttons padd-15" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+        <a href="CVAL.pdf" class="btn">Download CV</a>
+        <a href="#contact" class="btn engagez-moi">Hire me</a>
+        <button class="btn" onclick="openModal('modal-projets')">My projects</button>
+        <button class="btn" onclick="openModal('modal-competences')">Skills</button>
+    </div>
+</div>
+
+                            </div>
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <div class="skill-item padd-15">
+                                        <h5>C, C++</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 80%;"></div>
+                                            <div class="skill-percent">80%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>PYTHON, HTML & CSS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 90%;"></div>
+                                            <div class="skill-percent">90%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>JAVA & JS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 81%;"></div>
+                                            <div class="skill-percent">81%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>VBA</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 90%;"></div>
+                                            <div class="skill-percent">90%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Flutter & Swift</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 75%;"></div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>PHP & MYSQL</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 90%;"></div>
+                                            <div class="skill-percent">90%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>BootStrap & Wordpress</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 76%;"></div>
+                                            <div class="skill-percent">76%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mastered Software -->
+
+
+                       <div class="formation-section padd-15">
+    <h3 class="title">
+        Education
+        <button id="toggle-formation" class="btn-formation-toggle">Show ▼</button>
+    </h3>
+    <div class="formation-content animated-collapse" id="formation-box">
+        <div class="formation-card">
+         <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2025 - 2026</h3>
+                <h4 class="timeline-title">Master's in Information Systems Expert</h4>
+                <p class="timeline-text">At ISITECH 🇫🇷</p>
+            </div>
+            <!-- Master 1 -->
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2025</h3>
+                <h4 class="timeline-title">
+                    Master 1 Information Technology Products & Multimedia Services
+                    <span class="tag">M1 validated</span>
+                    <button class="info-badge" onclick="toggleInfo()">
+  <i class="fas fa-info-circle"></i>
+  <span class="pulse-dot"></span>
+</button>
+                </h4>
+                <p class="timeline-text">At Marie & Louis Pasteur University 🇫🇷</p>
+                
+                <!-- Hidden info box -->
+                <div id="info-box" class="info-box">
+                    I planned to continue with a Master 2 TDM, but I was assigned to the “Design, Creation, and Multimedia Arts” program,
+                    which did not align with my professional project nor my academic path.
+                    That's why I did not pursue the M2.
+                </div>
+            </div>
+
+            <!-- Professional License Vision -->
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2024</h3>
+                <h4 class="timeline-title">Bachelor degree in Vision for Industrial Robotics</h4>
+                <p class="timeline-text">At the University of Nîmes 🇫🇷</p>
+            </div>
+
+            <!-- Professional License Admin -->
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2023</h3>
+                <h4 class="timeline-title">Bachelor degree in Network Administration and Security</h4>
+                <p class="timeline-text">At the Multinational School of Telecom 🇸🇳</p>
+            </div>
+
+            <!-- BTS -->
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2022</h3>
+                <h4 class="timeline-title">2nd year BTS in Industrial IT and Networks</h4>
+                <p class="timeline-text">At the Senegal-Japan Vocational Training Center 🇸🇳</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS to add -->
+                        
+
+                         
                         
                         <div class="diplome-section padd-15">
                             <h3 class="title">
@@ -814,19 +1042,19 @@
                                         <div class="circle-dot"></div>
                                         <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2019 - 2020</h3>
                                         <h4 class="timeline-title">
-                                            Industrial Technician Diploma in Electromechanics
+                                            Industrial Technician Certificate in Electromechanics
                                             <span class="mention mention-passable">Passable Mention</span>
                                         </h4>
-                                        <p class="timeline-text">At the Senegal-Japan Professional and Technical Training Center 🇸🇳</p>
+                                        <p class="timeline-text">At the Senegal-Japan Vocational Training Center 🇸🇳</p>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
                                         <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2022</h3>
                                         <h4 class="timeline-title">
-                                            Two-year technical degree in Industrial IT and Networks
+                                            Two year technical degree in Industrial IT and Networks
                                             <span class="mention mention-assezbien">Fairly Good Mention</span>
                                         </h4>
-                                        <p class="timeline-text">At the Senegal-Japan Professional and Technical Training Center 🇸🇳</p>
+                                        <p class="timeline-text">At the Senegal-Japan Vocational Training Center 🇸🇳</p>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
@@ -835,7 +1063,7 @@
                                             Bachelor degree in Network Administration & Security
                                             <span class="mention mention-assezbien">Fairly Good Mention</span>
                                         </h4>
-                                        <p class="timeline-text">At the Multinational Higher School of Telecom 🇸🇳</p>
+                                        <p class="timeline-text">At the Multinational School of Telecom 🇸🇳</p>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
@@ -853,10 +1081,13 @@
                             
                             
                         
-                            <!-- 🌍 Interactive Map -->
+                            <!-- 🌍 IMPROVED Interactive Map -->
                             <div class="padd-15">
                                 <h3 class="title">School Locations</h3>
-                                <div id="map" style="height: 300px; width: 100%; margin-top: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);"></div>
+                                <div id="map"></div>
+                                <p style="text-align: center; margin-top: 10px; color: #666; font-size: 14px;">
+                                    <i class="fas fa-map-marker-alt" style="color: #e63946;"></i> Click on markers to see details
+                                </p>
                             </div>
                         </div>
                         
@@ -864,17 +1095,17 @@
 <div id="modal-projets" class="custom-modal">
   <div class="modal-content">
     <button class="close-modal" onclick="closeModal('modal-projets')">Close ✖</button>
-    <h3>My Projects in Detail</h3>
+    <h3>My projects in detail</h3>
     <p>Here are some projects I have completed and participated in:</p>
     <ul style="text-align: left; padding-left: 1.2rem;">
       <li><strong>🎮 GreenQuest:</strong> interactive game with connected figurines (JS, Arduino, Unity).</li>
-      <li><strong>🧠 The Labyrinth:</strong> mini escape room style game with puzzles (Unity + C#).</li>
+      <li><strong>🧠 The Labyrinth:</strong> mini escape game with puzzles (Unity + C#).</li>
       <li><strong>📱 Flexibook:</strong> mobile app for online appointments connected to Firebase.</li>
       <li><strong>🌐 Multimedia Store:</strong> e-commerce website.</li>
-      <li><strong>🔐 Network Administration Interface:</strong> anomaly detection via Python and SNMP scripts.</li>
-      <li><strong>🤖 Metrology System:</strong> real-time image processing with Halcon (university project).</li>
+      <li><strong>🔐 Network administration interface:</strong> anomaly detection via Python scripts and SNMP.</li>
+      <li><strong>🤖 Metrology system:</strong> real-time image processing with Halcon (university project).</li>
     </ul>
-    <p>👉 <a href="#contact">Contact me</a> if you want to know more or test one of these projects.</p>
+    <p>👉 <a href="#contact">Contact me</a> if you want to learn more or test one of these projects.</p>
   </div>
 </div>
 
@@ -882,18 +1113,18 @@
 <div id="modal-competences" class="custom-modal">
   <div class="modal-content">
     <button class="close-modal" onclick="closeModal('modal-competences')">Close ✖</button>
-    <h3>My Key Skills & Professional Objectives</h3>
-    <h4>🔧 Main Technical Skills:</h4>
+    <h3>My key skills & professional objectives</h3>
+    <h4>🔧 Main technical skills:</h4>
     <ul style="text-align: left; padding-left: 1.2rem;">
       <li><strong>Development:</strong> Python, C++, Java, JS, Flutter, PHP, MySQL</li>
       <li><strong>Front-end:</strong> HTML, CSS, Bootstrap, React (in progress), Tailwind</li>
       <li><strong>Back-end:</strong> Node.js, Express, Firebase, REST API</li>
       <li><strong>Mobile & AI:</strong> Flutter, TensorFlow, OpenCV</li>
-      <li><strong>Networks & Systems:</strong> Linux, Network Security, Shell script</li>
+      <li><strong>Networks & systems:</strong> Linux, Network Security, Shell scripting</li>
     </ul>
-    <h4>🎯 Professional Objectives:</h4>
+    <h4>🎯 Professional objectives:</h4>
     <p>
-      I wish to join an innovative company to work on:
+      I want to join an innovative company to work on:
     </p>
     <ul style="text-align: left; padding-left: 1.2rem;">
       <li>🧠 artificial intelligence or data projects</li>
@@ -928,7 +1159,7 @@
                     </div>
                     <div class="interest-back">
                         <h3>🎵 Music</h3>
-                        <p>Passionate about music creation and exploring different genres. I'm interested in computer-assisted production.</p>
+                        <p>Passionate about music creation and exploring different genres. I'm interested in computer-assisted music production.</p>
                         <div class="interest-tags">
                             <span class="tag">Guitar</span>
                             <span class="tag">Production</span>
@@ -1018,7 +1249,7 @@
 </section>
 
 <style>
-/* Interests Section - Discreet Version */
+/* Interests Section - Subtle version */
 .interests {
     padding: 60px 0;
     position: relative;
@@ -1305,7 +1536,7 @@
     animation-delay: 0.4s;
 }
 
-/* Improved responsive */
+/* Enhanced responsive */
 @media (max-width: 1200px) {
     .interests-container {
         gap: 20px;
@@ -1473,7 +1704,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa fa-mobile-alt"></i>
                             </div>
                             <h4>Web Design</h4>
-                            <p>Doing frontend development of a website, i.e., designing the graphical user interface, page design</p>
+                            <p>Frontend development of a website, meaning designing the graphical user interface, page design</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1482,7 +1713,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-laptop-code"></i>
                             </div>
                             <h4>Programming</h4>
-                            <p>Manipulating various programming languages such as JAVASCRIPT, JAVA, C, SQL etc...</p>
+                            <p>Manipulate various programming languages such as JAVASCRIPT, JAVA, C, SQL, etc...</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1491,7 +1722,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-brands fa-flutter"></i>
                             </div>
                             <h4>Mobile Development</h4>
-                            <p>Mobile application development with flutter.</p>
+                            <p>Mobile app development with Flutter.</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1500,7 +1731,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-eye-low-vision"></i>
                             </div>
                             <h4>Machine Vision & Image Processing</h4>
-                            <p>Controlling using cameras associated with adapted image processing.</p>
+                            <p>Control using cameras associated with adapted image processing.</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1527,7 +1758,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-wrench"></i>
                             </div>
                             <h4>IT Maintenance</h4>
-                            <p>Diagnosing a failure on a computer, more precisely on a central unit, and repairing it if possible</p>
+                            <p>Diagnose a failure on a computer, more precisely on a central unit, and repair it if possible</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1535,8 +1766,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="icon">
                                 <i class="fa-brands fa-windows"></i>
                             </div>
-                            <h4>Windows, Linux Operating System Installation</h4>
-                            <p>Performing necessary manipulations to install Windows with an active license. Installing Linux with Windows in dual boot</p>
+                            <h4>Installation of Windows, Linux Operating Systems</h4>
+                            <p>Perform the necessary manipulations to install Windows with an active license. Install Linux with Windows in dual boot</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -1545,13 +1776,13 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <i class="fa-solid fa-network-wired"></i>
                             </div>
                             <h4>Networking, System Administration</h4>
-                            <p>Establishing a connection between all workstations in an establishment</p>
+                            <p>Establish a connection between all workstations in an establishment</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="software-skills padd-15">
-    <h4>Mastered Software & TOOLS</h4>
+    <h4>Mastered Software & Tools</h4>
     <div class="software-logos">
         <img src="images/logo/vscode.png" alt="VS Code" title="Visual Studio Code">
         <img src="images/logo/pycharm.png" alt="PyCharm" title="PyCharm">
@@ -1605,7 +1836,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 onclick="openPopup(this)"
                                 data-image="./im1.jpg"
                                 data-title="My BTS Project: Creation of an e-commerce website for a company">
-                            See More
+                            See more
                         </button>
                     </div>
                 </div>
@@ -1617,13 +1848,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="portfolio-img">
                         <img src="./imge.png" alt="mv project">
                     </div>
-                    <h3>My tutored project in professional license VRI</h3>
+                    <h3>My supervised project in VRI professional license</h3>
                     <div class="portfolio-btn">
                         <button class="btn-see-more"
                                 onclick="openPopup(this)"
                                 data-image="./vris.gif"
-                                data-title="Description: Development of metrology systems based on Halcon">
-                            See More
+                                data-title="Description: Development of a metrology system based on Halcon">
+                            See more
                         </button>
                     </div>
                 </div>
@@ -1637,15 +1868,15 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="portfolio-img">
             <img src="./room.png" alt="AI Project">
         </div>
-        <h3>Personal Project: Roomify, AI-assisted decoration app with AR</h3>
+        <h3>Personal project: Roomify, AI-assisted interior decoration app with AR</h3>
         <div class="portfolio-btn">
             <button class="btn-see-more"
                     onclick="openPopup(this)"
                     data-image="./greenquest.gif"
-                    data-title="Description: Roomify – AI-assisted decoration app with augmented reality integration. (in progress)"
+                    data-title="Description: Roomify – AI-assisted interior decoration app with augmented reality integration. (in progress)"
                     data-type="video"
                     data-video="./room-video.mp4">
-                See More
+                See more
             </button>
         </div>
     </div>
@@ -1659,13 +1890,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             <source src="./video.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>My Master's Project: Mobile app for online appointments</h3>
+                    <h3>My Master's Project: Online appointment booking mobile application</h3>
                     <div class="portfolio-btn">
                         <button class="btn-see-more"
                                 onclick="openPopup(this)"
                                 data-image="./flex.png"
-                                data-title="My Master's Project: Mobile app for online appointments">
-                            See More
+                                data-title="My Master's Project: Online appointment booking mobile application">
+                            See more
                         </button>
                     </div>
                 </div>
@@ -1684,7 +1915,7 @@ document.addEventListener('DOMContentLoaded', function() {
                    href="https://greenquestasm.000webhostapp.com/"
                    target="_blank"
                    rel="noopener noreferrer">
-                    Visit Website
+                    Visit the website
                 </a>
             </div>
         </div>
@@ -1709,7 +1940,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="row">
             <div class="project-content">
                 <!-- Presentation video -->
-               <!-- QR Code instead of the video -->
+               <!-- QR Code instead of video -->
 <div class="project-video padd-15">
     <div class="qr-section-main">
         <h3 class="qr-title-main">📱 Scan to see the Roomify demo</h3>
@@ -1724,14 +1955,14 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
         
         <p class="qr-link-text">
-            Or <a href="https://youtu.be/VqGsNbsqjm8" class="qr-link-main">click here to watch the video</a>
+            Or <a href="https://youtu.be/VqGsNbsqjm8" class="qr-link-main">click here to see the video</a>
         </p>
     </div>
 </div>
                 
                 <!-- Project description -->
                 <div class="project-info padd-15">
-                    <h3>🚀 Roomify - AI-Assisted Decoration App</h3>
+                    <h3>🚀 Roomify - AI-Assisted Interior Decoration App</h3>
                     <div class="project-status">
                         <span class="status-badge">In Development</span>
                         <span class="date-start">Started in September 2025</span>
@@ -1740,16 +1971,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="project-description">
                         <p><strong>Roomify revolutionizes interior decoration by combining artificial intelligence and augmented reality.</strong></p>
                         
-                        <h4>🎯 Main Features:</h4>
+                        <h4>🎯 Main features:</h4>
                         <ul>
-                            <li>📸 Photo analysis of spaces with AI</li>
+                            <li>📸 Space photo analysis with AI</li>
                             <li>🎨 Personalized decoration suggestions</li>
-                            <li>👁️ Visualization in augmented reality</li>
+                            <li>👁️ Augmented reality visualization</li>
                             <li>🛒 E-commerce integration</li>
-                            <li>📱 Cross-platform mobile application</li>
+                            <li>📱 Cross-platform mobile app</li>
                         </ul>
                         
-                        <h4>🛠️ Technologies Used:</h4>
+                        <h4>🛠️ Technologies used:</h4>
                         <div class="tech-stack">
                             <span class="tech-tag">Html & Css</span>
                             <span class="tech-tag">TensorFlow</span>
@@ -1782,8 +2013,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                         
                         <div class="project-cta">
-                            <p><strong>Interested in this project?</strong> Feel free to contact me to discuss it!</p>
-                            <a href="#contact" class="btn engagez-moi">Let's Talk!</a>
+                            <p><strong>Interested in this project?</strong> Don't hesitate to contact me to discuss it!</p>
+                            <a href="#contact" class="btn engagez-moi">Let's talk about it!</a>
                         </div>
                     </div>
                 </div>
@@ -1798,7 +2029,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h2>Contact Me</h2>
                     </div>
                 </div>
-                <h3 class="contact-title padd-15">Do You Have Any Questions?</h3>
+                <h3 class="contact-title padd-15">Do you have any Questions?</h3>
                 <h4 class="contact-sub-title padd-15">I AM AT YOUR SERVICE</h4>
         
                 <div class="row contact-buttons">
@@ -1823,7 +2054,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="contact-card padd-15" id="availability-card">
   <div class="icon"><i class="fa fa-clock"></i></div>
   <h4>Availability</h4>
-  <p>Click to view</p>
+  <p>Click to see</p>
 </div>
 
 <!-- Calendar popup -->
@@ -1860,7 +2091,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
                 <h3 class="contact-title padd-15">SEND ME A MESSAGE</h3>
-                <h4 class="contact-sub-title padd-15">I WILL RESPOND AS SOON AS POSSIBLE</h4>
+                <h4 class="contact-sub-title padd-15">I WILL REPLY AS SOON AS POSSIBLE</h4>
         
                 <div class="row">
                     <div class="container">
@@ -1895,7 +2126,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
-                                        <button type="submit" class="btn">Send Message</button>
+                                        <button type="submit" class="btn">Send message</button>
                                     </div>
                                 </div>
                             </form>
@@ -1951,51 +2182,371 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
   AOS.init();
 </script>
+
+<!-- ENHANCED SCRIPT FOR THE MAP ONLY -->
 <script>
     // Map initialization
-    const map = L.map('map').setView([14.6928, -17.4467], 5); // View centered on Dakar
-  
-    // Map background (tiles)
+    const map = L.map('map').setView([14.6928, -17.4467], 5);
+    
+    // More modern map background
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap',
-      maxZoom: 18
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 18,
+        className: 'map-tiles'
     }).addTo(map);
-  
-    // List of schools with coordinates
+    
+    // Colors aligned with your portfolio (#e63946)
+    const schoolColors = {
+        'universite': '#e63946',  // Red - Universities
+        'ecole': '#1e1e1e',       // Black - Higher Schools
+        'centre': '#007BFF',      // Blue - Training Centers
+        'formation': '#28a745'    // Green - Training
+    };
+    
+    // Custom icons
+    function createSchoolIcon(schoolType) {
+        const color = schoolColors[schoolType] || '#e63946';
+        const size = 40;
+        
+        return L.divIcon({
+            className: 'custom-school-marker',
+            html: `
+                <div style="position: relative; width: ${size}px; height: ${size}px;">
+                    <div class="marker-pin" style="
+                        width: ${size}px;
+                        height: ${size}px;
+                        background: ${color};
+                        border-radius: 50% 50% 50% 0;
+                        transform: rotate(-45deg);
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                        border: 2px solid white;
+                    "></div>
+                    <div style="
+                        position: absolute;
+                        width: ${size/2}px;
+                        height: ${size/2}px;
+                        left: 50%;
+                        top: 25%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: ${size/3}px;
+                    ">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+            `,
+            iconSize: [size, size],
+            iconAnchor: [size/2, size],
+            popupAnchor: [0, -size + 5]
+        });
+    }
+    
+    // School data with MULTIPLE DIPLOMAS for the training center
     const schools = [
-      {
-        name: "University of Nîmes 🇫🇷",
-        location: [43.8375, 4.3601]
-      },
-      {
-        name: "University of Marie & Louis Pasteur 🇫🇷",
-        location: [47.510356, 6.798466] // Example Strasbourg
-      },
-      {
-        name: "Multinational Higher School of Telecom 🇸🇳",
-        location: [14.7136, -17.4545]
-      },
-      {
-        name: "Senegal-Japan Training Center 🇸🇳",
-        location: [14.7273, -17.4708]
-      }
+        {
+            id: 1,
+            name: "University of Nîmes",
+            country: "🇫🇷",
+            type: "universite",
+            location: [43.8375, 4.3601],
+            period: "2023 - 2024",
+            diplomes: [
+                {
+                    nom: "Bachelor degree in Vision for Industrial Robotics",
+                    mention: "Good Mention",
+                    annee: "2024"
+                }
+            ],
+            description: "Specialized training in industrial vision and robotics with HALCON",
+            ville: "Nîmes",
+            details: "Acquisition of skills in image processing, HALCON programming, and integration of industrial vision systems."
+        },
+        {
+            id: 2,
+            name: "Marie & Louis Pasteur University",
+            country: "🇫🇷",
+            type: "universite",
+            location: [47.510356, 6.798466],
+            period: "2024 - 2025",
+            diplomes: [
+                {
+                    nom: "Master 1 Information Technology Products & Multimedia Services",
+                    mention: "M1 validated",
+                    annee: "2025"
+                }
+            ],
+            description: "Training in multimedia technologies and mobile development",
+            ville: "Montbéliard",
+            details: "Specialization in multimedia products and services, mobile development, and digital project management."
+        },
+        {
+            id: 3,
+            name: "Multinational School of Telecom",
+            country: "🇸🇳",
+            type: "ecole",
+            location: [14.7136, -17.4545],
+            period: "2022 - 2023",
+            diplomes: [
+                {
+                    nom: "Bachelor degree in Network Administration and Security",
+                    mention: "Fairly Good Mention",
+                    annee: "2023"
+                }
+            ],
+            description: "Training in cybersecurity and network administration",
+            ville: "Dakar",
+            details: "Deepening skills in information system security and network infrastructure administration."
+        },
+        {
+            id: 4,
+            name: "Senegal-Japan Vocational Training Center",
+            country: "🇸🇳",
+            type: "centre",
+            location: [14.7273, -17.4708],
+            period: "2017 - 2022",
+            // TWO DIPLOMAS for this center!
+            diplomes: [
+                {
+                    nom: "BTS in Industrial IT and Networks",
+                    mention: "Fairly Good Mention",
+                    annee: "2022",
+                    details: "Complete training in industrial IT, networks, and computer system maintenance."
+                },
+                {
+                    nom: "Industrial Technician Certificate in Electromechanics",
+                    mention: "Passable Mention",
+                    annee: "2020",
+                    details: "Technical training in electromechanics, automation, and industrial maintenance."
+                }
+            ],
+            description: "Technical training in industrial IT and electromechanics",
+            ville: "Dakar",
+            details: "Dual training: first in electromechanics, then specialization in industrial IT and networks."
+        }
     ];
-  
-    // Add markers on the map
+    
+    // Function to generate diploma HTML content
+    function generateDiplomesHTML(diplomes) {
+        if (diplomes.length === 1) {
+            // Single diploma
+            const diplome = diplomes[0];
+            return `
+                <div class="popup-diplome">
+                    <p style="margin: 0 0 5px 0;"><strong>🎓 Diploma obtained:</strong></p>
+                    <p style="margin: 0; font-weight: 500;">${diplome.nom}</p>
+                    <p style="margin: 5px 0 0 0; color: #e63946; font-weight: 600;">
+                        <i class="fas fa-star"></i> ${diplome.mention} (${diplome.annee})
+                    </p>
+                    ${diplome.details ? `<p style="margin: 5px 0 0 0; font-size: 12px; color: #666;">${diplome.details}</p>` : ''}
+                </div>
+            `;
+        } else {
+            // Multiple diplomas
+            let diplomesHTML = `
+                <div class="popup-diplomes-multiple">
+                    <p style="margin: 0 0 10px 0; font-weight: 600; color: #333;">
+                        <i class="fas fa-graduation-cap"></i> Diplomas obtained (${diplomes.length}) :
+                    </p>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+            `;
+            
+            diplomes.forEach((diplome, index) => {
+                diplomesHTML += `
+                    <div class="diplome-item" style="
+                        background: ${index % 2 === 0 ? '#f8f9fa' : '#fff'};
+                        padding: 8px;
+                        border-radius: 6px;
+                        border-left: 3px solid ${index % 2 === 0 ? '#e63946' : '#007BFF'};
+                    ">
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div style="flex: 1;">
+                                <p style="margin: 0 0 4px 0; font-weight: 500; font-size: 13px;">${diplome.nom}</p>
+                                <p style="margin: 0; font-size: 11px; color: #e63946; font-weight: 600;">
+                                    <i class="fas fa-award"></i> ${diplome.mention}
+                                </p>
+                            </div>
+                            <span style="
+                                background: #e63946;
+                                color: white;
+                                padding: 2px 6px;
+                                border-radius: 12px;
+                                font-size: 10px;
+                                font-weight: bold;
+                            ">${diplome.annee}</span>
+                        </div>
+                        ${diplome.details ? `<p style="margin: 4px 0 0 0; font-size: 11px; color: #666; line-height: 1.3;">${diplome.details}</p>` : ''}
+                    </div>
+                `;
+            });
+            
+            diplomesHTML += `
+                    </div>
+                </div>
+            `;
+            return diplomesHTML;
+        }
+    }
+    
+    // Adding markers with detailed popups
+    const markersGroup = L.layerGroup().addTo(map);
+    
     schools.forEach(school => {
-      L.marker(school.location)
-        .addTo(map)
-        .bindPopup(`<b>${school.name}</b>`)
-        .openPopup(); 
+        const icon = createSchoolIcon(school.type);
+        
+        const marker = L.marker(school.location, {
+            icon: icon,
+            title: school.name
+        }).addTo(markersGroup);
+        
+        // Generate diploma HTML
+        const diplomesHTML = generateDiplomesHTML(school.diplomes);
+        
+        // Enriched popup content with multiple diploma management
+        const popupContent = `
+            <div class="school-popup">
+                <div class="popup-header" style="background: linear-gradient(135deg, ${schoolColors[school.type] || '#e63946'}, ${school.type === 'centre' ? '#0056b3' : '#c1121f'});">
+                    <h4>${school.name} ${school.country}</h4>
+                    <p style="margin: 5px 0 0 0; font-size: 12px; opacity: 0.9;">
+                        <i class="fas fa-map-marker-alt"></i> ${school.ville}
+                    </p>
+                    ${school.diplomes.length > 1 ? 
+                        `<p style="margin: 5px 0 0 0; font-size: 11px; background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 10px; display: inline-block;">
+                            <i class="fas fa-certificate"></i> ${school.diplomes.length} diplomas
+                        </p>` 
+                        : ''
+                    }
+                </div>
+                <div class="popup-body">
+                    <div class="popup-info">
+                        <p><strong><i class="far fa-calendar"></i> Period:</strong> ${school.period}</p>
+                        
+                        ${diplomesHTML}
+                        
+                        <p style="margin-top: 10px;"><strong>📝 Description:</strong></p>
+                        <p style="font-size: 13px; line-height: 1.4; color: #555;">${school.details}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        marker.bindPopup(popupContent, {
+            maxWidth: school.diplomes.length > 1 ? 350 : 320,
+            minWidth: 280,
+            className: 'school-popup-wrapper',
+            closeButton: true,
+            autoClose: false,
+            closeOnEscapeKey: true
+        });
+        
+        // Hover effect
+        marker.on('mouseover', function(e) {
+            this.openPopup();
+            const element = this.getElement();
+            if (element) {
+                element.style.transform = 'scale(1.15)';
+                element.style.transition = 'transform 0.3s ease';
+                element.style.zIndex = '1000';
+            }
+        });
+        
+        marker.on('mouseout', function(e) {
+            const element = this.getElement();
+            if (element) {
+                element.style.transform = 'scale(1)';
+                element.style.zIndex = 'auto';
+            }
+        });
     });
-  </script>
+    
+    // Map legend
+    const legend = L.control({ position: 'bottomright' });
+    
+    legend.onAdd = function(map) {
+        const div = L.DomUtil.create('div', 'map-legend');
+        div.innerHTML = `
+            <h4><i class="fas fa-key"></i> LEGEND</h4>
+            <div class="legend-item">
+                <div class="legend-color" style="background: ${schoolColors.universite};"></div>
+                <span>Universities</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: ${schoolColors.ecole};"></div>
+                <span>Higher Schools</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: ${schoolColors.centre};"></div>
+                <span>Training Centers</span>
+            </div>
+        `;
+        
+        // Prevent clicks on the legend from propagating to the map
+        L.DomEvent.disableClickPropagation(div);
+        return div;
+    };
+    
+    legend.addTo(map);
+    
+    // Adjust view to include all markers
+    if (schools.length > 0) {
+        const bounds = L.latLngBounds(schools.map(s => s.location));
+        map.fitBounds(bounds, { 
+            padding: [50, 50],
+            maxZoom: 8
+        });
+    }
+    
+    // Add custom zoom control
+    L.control.zoom({
+        position: 'topright',
+        zoomInTitle: 'Zoom in',
+        zoomOutTitle: 'Zoom out'
+    }).addTo(map);
+</script>
+
+<style>
+    /* Additional styles for multiple diplomas */
+    .popup-diplomes-multiple {
+        margin-top: 10px;
+    }
+    
+    .diplome-item {
+        transition: all 0.3s ease;
+    }
+    
+    .diplome-item:hover {
+        transform: translateX(3px);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* Improved responsive for popups */
+    @media (max-width: 480px) {
+        .school-popup-wrapper .leaflet-popup-content {
+            max-width: 280px !important;
+        }
+        
+        .diplome-item {
+            padding: 6px !important;
+        }
+        
+        .diplome-item p {
+            font-size: 12px !important;
+        }
+    }
+</style>
+
   <!-- POPUP -->
 <div id="portfolio-popup" class="popup-overlay">
     <div class="popup-content">
         <span class="close-btn" onclick="closePopup()">&times;</span>
-        <img id="popup-image" src="" alt="Project Preview">
-        <h3 id="popup-title">Project Title</h3>
-        <p id="popup-description">Detailed project description to come here.</p>
+        <img id="popup-image" src="" alt="Project preview">
+        <h3 id="popup-title">Project title</h3>
+        <p id="popup-description">Detailed project description coming here.</p>
     </div>
 </div>
 
@@ -2008,8 +2559,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function openPopup(button) {
     const imageSrc = button.getAttribute("data-image");
     const title = button.getAttribute("data-title");
-    const type = button.getAttribute("data-type"); // Gets the type (image or video)
-    const videoSrc = button.getAttribute("data-video"); // Gets the video path
+    const type = button.getAttribute("data-type"); // Gets type (image or video)
+    const videoSrc = button.getAttribute("data-video"); // Gets video path
 
     // Clear previous content
     popupImage.style.display = 'none';
@@ -2047,26 +2598,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const descriptions = {
         "My BTS Project: Creation of an e-commerce website for a company":
             "Complete online sales site with shopping cart, customer account, admin area and MySQL database.",
-        "My Master's Project: Mobile app for online appointments":
+        "My Master's Project: Online appointment booking mobile application":
             "Flutter app allowing users to book a time slot in hotels or services.",
-        "Description: Development of metrology systems based on Halcon":
+        "Description: Development of a metrology system based on Halcon":
             "Design of a metrology system for dimensional control of industrial parts using Halcon software. Implementation of Halcon scripts for image analysis and defect identification.",
-        "Description: Roomify – AI-assisted decoration app with augmented reality integration. (in progress)":
-            "Roomify is an AI-assisted decoration application. The user uploads a photo of their space, and the AI suggests personalized decoration ideas. The integration of augmented reality will offer an immersive experience by allowing visualization of layouts directly in the real environment."
+        "Description: Roomify – AI-assisted interior decoration app with augmented reality integration. (in progress)":
+            "Roomify is an AI-assisted interior decoration app. The user uploads a photo of their space, and the AI suggests personalized decoration recommendations. The augmented reality integration will provide an immersive experience by allowing visualization of arrangements directly in the real environment."
     };
 
     popupDescription.innerText = descriptions[title] || "Description coming soon.";
+
     popup.style.display = "flex";
 }
 
+
    function closePopup() {
-    // Remove the video if it exists
+    // Remove video if it exists
     const existingVideo = document.getElementById('popup-video');
     if (existingVideo) {
         existingVideo.remove();
     }
     
-    // Redisplay the image (for other projects)
+    // Re-display the image (for other projects)
     popupImage.style.display = 'block';
     
     popup.style.display = "none";
@@ -2079,7 +2632,7 @@ document.addEventListener('click', function(event) {
 });
 </script>
 <script>
-    // For the Diplomas section
+    // For Diploma section
     document.getElementById('toggle-diplome')?.addEventListener('click', () => {
         const box = document.getElementById('diplome-box');
         box.classList.toggle('show');
@@ -2087,7 +2640,7 @@ document.addEventListener('click', function(event) {
             box.classList.contains('show') ? "Hide ▲" : "Show ▼";
     });
 
-    // For the Education section
+    // For Education section
     document.getElementById('toggle-formation')?.addEventListener('click', () => {
         const box = document.getElementById('formation-box');
         box.classList.toggle('show');
@@ -2193,7 +2746,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.toggle('aside-open');
         });
         
-        // Close menu by clicking on a link
+        // Close menu when clicking on a link
         const navLinks = document.querySelectorAll('.aside .nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -2237,7 +2790,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Menu clicked, open:', aside.classList.contains('open')); // Debug
         });
         
-        // Close menu by clicking on a link
+        // Close menu when clicking on a link
         const navLinks = document.querySelectorAll('.aside .nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -2263,7 +2816,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-<!-- Floating mobile menu -->
+<!-- Mobile floating menu -->
 <div class="floating-menu">
     <button class="floating-menu-btn" id="floatingMenuBtn">
         <i class="fas fa-bars"></i>
@@ -2295,7 +2848,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Overlay to close the menu -->
 <div class="menu-overlay" id="menuOverlay" onclick="closeFloatingMenu()"></div>
 <script>
-    // Enhanced version with finer scroll management
+    // Improved version with finer scroll handling
 const floatingMenu = document.querySelector('.floating-menu');
 const floatingMenuBtn = document.getElementById('floatingMenuBtn');
 const floatingMenuItems = document.getElementById('floatingMenuItems');
@@ -2363,7 +2916,7 @@ function handleScroll() {
     
     lastScrollTop = scrollTop;
     
-    // Redisplay menu after scroll stop if at the top
+    // Show menu again after scrolling stops if at top
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
         if (scrollTop < 50) {
@@ -2409,13 +2962,19 @@ document.addEventListener('DOMContentLoaded', function() {
     showFloatingMenu();
 });
 
-// Redisplay menu when touching the screen (for mobile)
+// Show menu again when touching the screen (for mobile)
 document.addEventListener('touchstart', function() {
     showFloatingMenu();
 });
+function toggleInfo() {
+    const infoBox = document.getElementById('info-box');
+    if (infoBox) {
+        infoBox.classList.toggle('show');
+    }
+}
 </script>
 <script>
-    // Management of the centered apprenticeship banner
+    // Management of centered apprenticeship banner
 document.addEventListener('DOMContentLoaded', function() {
     const banner = document.getElementById('alternance-banner');
     const reopenBtn = document.getElementById('banner-reopen');
@@ -2441,7 +3000,7 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.classList.remove('show');
             document.body.style.overflow = ''; // Re-enables scrolling
             
-            // Show the reopen button after closing
+            // Show reopen button after closing
             setTimeout(() => {
                 if (reopenBtn) {
                     reopenBtn.style.display = 'flex';
@@ -2450,10 +3009,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    // Close by clicking on the overlay
+    // Close by clicking on overlay
     overlay.addEventListener('click', closeBanner);
     
-    // Close with the Escape key
+    // Close with Escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && banner.classList.contains('show')) {
             closeBanner();
