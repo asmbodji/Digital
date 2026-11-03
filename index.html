@@ -23,7 +23,7 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <style>
-    /* Styles for the improved map only */
+    /* Styles for the enhanced map only */
     #map {
         height: 400px;
         width: 100%;
@@ -34,7 +34,7 @@
         z-index: 1;
     }
     
-    /* Custom markers */
+    /* Marker customization */
     .custom-school-marker {
         transition: all 0.3s ease;
     }
@@ -48,7 +48,7 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     }
     
-    /* Custom popups */
+    /* Popup customization */
     .leaflet-popup-content-wrapper {
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -151,10 +151,10 @@
         animation: pulse 1s infinite;
     }
 
-    /* Existing styles preserved */
+    /* Your existing styles are kept here */
     .highlight-box {
   background: #f0f8ff; /* light blue */
-  border-left: 5px solid #ff002b; /* blue band */
+  border-left: 5px solid #ff002b; /* blue stripe */
   padding: 12px 15px;
   margin: 15px 0;
   border-radius: 8px;
@@ -171,7 +171,7 @@
         font-size: 12px;
         font-weight: bold;
         color: white;
-        background-color: #007BFF;
+        background-color: #007BFF; /* blue */
         border-radius: 12px;
     }
 
@@ -187,7 +187,7 @@
     overflow: visible !important;
 }
 
-/* Hide tooltip by default */
+/* Hide the tooltip by default */
 .phone-unavailable-tooltip .tooltip-bubble {
     position: absolute;
     bottom: calc(100% + 18px);
@@ -208,7 +208,7 @@
     display: block;
 }
 
-/* Show tooltip on hover */
+/* Show the tooltip on hover */
 .phone-unavailable-tooltip:hover .tooltip-bubble {
     opacity: 1;
     visibility: visible;
@@ -274,7 +274,7 @@
     margin-bottom: 8px;
 }
 
-/* Separator */
+/* Divider */
 .tooltip-bubble .tooltip-divider {
     display: block;
     height: 1px;
@@ -283,7 +283,7 @@
     opacity: 0.4;
 }
 
-/* Highlight email */
+/* Highlighted email */
 .tooltip-bubble .tooltip-email {
     display: flex;
     align-items: center;
@@ -302,7 +302,7 @@
     font-weight: 700;
 }
 
-/* Visual effect on map hover */
+/* Visual effect on the card on hover */
 .phone-unavailable-tooltip:hover {
     border-color: #e63946 !important;
     box-shadow: 0 10px 30px rgba(230, 57, 70, 0.25) !important;
@@ -310,7 +310,7 @@
     transition: all 0.3s ease;
 }
 
-/* Appearance animation */
+/* Apparition animation */
 @keyframes tooltipFadeIn {
     from {
         opacity: 0;
@@ -489,7 +489,7 @@
     max-width: 100%;
     box-sizing: border-box;
 }
-/* Centered Apprenticeship Banner */
+/* Centered Alternance Banner */
 .alternance-banner {
     position: fixed;
     top: 50%;
@@ -751,7 +751,7 @@
     box-sizing: border-box;
 }
 
-/* Media queries to reinforce responsive */
+/* Media queries to reinforce responsiveness */
 @media (max-width: 768px) {
     .interests-grid {
         width: 100%;
@@ -835,7 +835,7 @@
         from {opacity: 0; transform: translateY(-5px);}
         to {opacity: 1; transform: translateY(0);}
     }
-/* Add to your CSS */
+/* To add in your CSS */
 .current-project .container {
     overflow-x: hidden;
     max-width: 100%;
@@ -861,8 +861,8 @@
     max-width: 100%;
 }
 
-/* ========== MODERN DIPLOMA CARD STYLES ========== */
-/* Styles for diploma cards */
+/* ========== STYLES FOR MODERN DIPLOMA CARDS ========== */
+/* Diploma card style */
 .diploma-card {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-radius: 16px;
@@ -945,7 +945,7 @@
     100% { background-position: -200% 0; }
 }
 
-/* Specific colors by mention */
+/* Specific colors per mention */
 .mention-passable {
     background: linear-gradient(135deg, #6c757d, #495057);
     color: white;
@@ -975,7 +975,7 @@
 .mention-bien i {
     font-size: 12px;
 }
-/* Discreet "Abroad" badge on phone card */
+/* Discreet "Abroad" badge on the phone card */
 .phone-unavailable-tooltip {
     position: relative;
 }
@@ -1081,7 +1081,7 @@
     text-align: right;
 }
 
-/* Styles for diploma cards in Diploma section */
+/* Styles for diploma cards in the Diploma section */
 .diplome-cards-container {
     display: flex;
     flex-direction: column;
@@ -1122,7 +1122,7 @@
     }
 }
 
-/* Improved info button */
+/* Enhanced info button */
 .info-badge {
     position: relative;
     display: inline-flex;
@@ -1218,7 +1218,7 @@
     }
 }
 
-/* Styles for training with modern card */
+/* Styles for the training section with modern cards */
 .formation-cards-container {
     display: flex;
     flex-direction: column;
@@ -1375,315 +1375,7 @@
 .floating-menu-items {
     background: var(--bg-black-100);
 }
-/* ========== SECTION EXPÉRIENCES PROFESSIONNELLES ========== */
-.experiences {
-    padding: 40px 0 60px;
-    background: var(--bg-black-900);
-}
 
-.section-subtitle {
-    text-align: center;
-    color: var(--text-black-700);
-    font-size: 1rem;
-    margin-top: -10px;
-    margin-bottom: 30px;
-}
-
-/* Timeline des expériences */
-.experiences-timeline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.experience-item {
-    flex: 0 0 calc(33.33% - 30px);
-    max-width: calc(33.33% - 30px);
-    min-width: 280px;
-}
-
-.experience-card {
-    background: var(--bg-black-100);
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid var(--bg-black-50);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.experience-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(230, 57, 70, 0.15);
-    border-color: var(--skin-color);
-}
-
-/* Header avec image */
-.experience-header {
-    position: relative;
-}
-
-.experience-image {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.experience-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.experience-card:hover .experience-image img {
-    transform: scale(1.05);
-}
-
-.experience-overlay {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
-
-.experience-badge {
-    display: inline-block;
-    padding: 5px 16px;
-    background: linear-gradient(135deg, #e63946, #ff6b6b);
-    color: white;
-    font-size: 11px;
-    font-weight: 700;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
-}
-
-/* Métadonnées */
-.experience-meta {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px 0;
-    font-size: 13px;
-    color: var(--text-black-700);
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.experience-meta i {
-    color: var(--skin-color);
-    margin-right: 5px;
-}
-
-/* Corps de la carte */
-.experience-body {
-    padding: 15px 20px 25px;
-    flex: 1;
-}
-
-.experience-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text-black-900);
-    margin-bottom: 5px;
-    line-height: 1.3;
-}
-
-.experience-company {
-    font-size: 0.95rem;
-    color: var(--skin-color);
-    font-weight: 500;
-    margin-bottom: 12px;
-}
-
-/* Tags */
-.experience-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 15px;
-}
-
-.exp-tag {
-    display: inline-block;
-    padding: 3px 12px;
-    background: rgba(230, 57, 70, 0.1);
-    color: var(--skin-color);
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 600;
-    border: 1px solid rgba(230, 57, 70, 0.2);
-}
-
-/* Détails */
-.experience-details {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.experience-details li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 14px;
-    color: var(--text-black-700);
-    padding: 6px 0;
-    line-height: 1.5;
-    border-bottom: 1px solid var(--bg-black-50);
-}
-
-.experience-details li:last-child {
-    border-bottom: none;
-}
-
-.experience-details li i {
-    color: var(--skin-color);
-    font-size: 14px;
-    margin-top: 3px;
-    flex-shrink: 0;
-}
-
-/* Statistiques */
-.experience-stats {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.stat-item {
-    flex: 0 0 calc(25% - 20px);
-    max-width: calc(25% - 20px);
-    min-width: 180px;
-}
-
-.stat-card {
-    background: var(--bg-black-100);
-    padding: 30px 20px;
-    border-radius: 20px;
-    text-align: center;
-    border: 1px solid var(--bg-black-50);
-    transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--skin-color);
-    box-shadow: 0 10px 30px rgba(230, 57, 70, 0.1);
-}
-
-.stat-icon {
-    font-size: 35px;
-    color: var(--skin-color);
-    margin-bottom: 10px;
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--text-black-900);
-    line-height: 1.2;
-    background: linear-gradient(135deg, #e63946, #ff6b6b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: var(--text-black-700);
-    font-weight: 500;
-    margin-top: 5px;
-}
-
-/* Responsive */
-@media (max-width: 1200px) {
-    .experience-item {
-        flex: 0 0 calc(50% - 30px);
-        max-width: calc(50% - 30px);
-    }
-}
-
-@media (max-width: 768px) {
-    .experience-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    
-    .experience-image {
-        height: 180px;
-    }
-    
-    .experience-meta {
-        font-size: 12px;
-        padding: 12px 15px 0;
-    }
-    
-    .experience-body {
-        padding: 12px 15px 20px;
-    }
-    
-    .experience-title {
-        font-size: 1rem;
-    }
-    
-    .stat-item {
-        flex: 0 0 calc(50% - 15px);
-        max-width: calc(50% - 15px);
-        min-width: auto;
-    }
-    
-    .stat-number {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .stat-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    
-    .experience-image {
-        height: 160px;
-    }
-}
-
-/* Dark mode */
-body.dark .experience-card {
-    background: var(--bg-black-100);
-    border-color: var(--bg-black-50);
-}
-
-body.dark .experience-title {
-    color: var(--text-black-900);
-}
-
-body.dark .experience-details li {
-    color: var(--text-black-700);
-    border-bottom-color: var(--bg-black-50);
-}
-
-body.dark .stat-card {
-    background: var(--bg-black-100);
-    border-color: var(--bg-black-50);
-}
-
-body.dark .stat-number {
-    background: linear-gradient(135deg, #ff6b6b, #e63946);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-body.dark .exp-tag {
-    background: rgba(230, 57, 70, 0.2);
-    border-color: rgba(230, 57, 70, 0.3);
-}
 .floating-menu-item {
     color: var(--text-black-900);
 }
@@ -1711,7 +1403,7 @@ body.dark .exp-tag {
     color: var(--text-black-700);
 }
 
-/* ========== MOBILE PORTFOLIO FIX ========== */
+/* ========== PORTFOLIO MOBILE FIX ========== */
 
 /* Main portfolio container */
 .portfolio .container {
@@ -1800,7 +1492,7 @@ body.dark .exp-tag {
     box-shadow: 0 35px 60px -15px rgba(230, 57, 70, 0.25);
 }
 
-/* Left side - Media (QR Code or Video) */
+/* Left part - Media (QR Code or Video) */
 .project-media {
     flex: 1.2;
     min-width: 280px;
@@ -1824,7 +1516,7 @@ body.dark .exp-tag {
     pointer-events: none;
 }
 
-/* Styled QR Code Container */
+/* Stylized QR Code Container */
 .qr-elegant {
     text-align: center;
     position: relative;
@@ -1891,7 +1583,7 @@ body.dark .exp-tag {
     transform: translateY(-2px);
 }
 
-/* Right side - Information */
+/* Right part - Information */
 .project-details {
     flex: 2;
     padding: 45px 45px 45px 0;
@@ -1956,7 +1648,7 @@ body.dark .exp-tag {
     padding-left: 20px;
 }
 
-/* Features grid */
+/* Feature grid */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -2194,7 +1886,7 @@ body.dark .exp-tag {
     transform: translateY(-3px);
 }
 
-/* Entry animation */
+/* Entrance animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -2476,13 +2168,13 @@ body.dark .exp-tag {
         line-height: 1.3;
     }
     
-    /* Adjust videos in portfolio */
+    /* Adjust videos in the portfolio */
     .portfolio-img.video video {
         object-fit: cover;
     }
 }
 
-/* Project appearance animation */
+/* Portfolio item entrance animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -2511,7 +2203,39 @@ body.dark .exp-tag {
 
 </head>
 <body>
-    <!-- Apprenticeship Banner -->
+    <!-- ===== WELCOME OVERLAY: CV ↔ Portfolio ===== -->
+<div id="welcome-overlay" class="welcome-overlay">
+    <div class="welcome-inner">
+        <h1 class="welcome-title">From CV to <em>portfolio</em></h1>
+        <p class="welcome-sub">Drag the cursor to switch between my background and my projects</p>
+        <div class="welcome-rule"></div>
+
+        <div class="cmp" id="welcome-cmp" tabindex="0" role="slider" aria-label="Comparison between CV and portfolio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+            <!-- Replace src with the path to your CV image -->
+            <img class="cv" src="CVSMCC.jpg" alt="My CV">
+            
+            <div class="top" id="welcome-top">
+                <!-- Replace src with your portfolio image (banner or screenshot) -->
+                <img src="por.png" alt="My Portfolio">
+            </div>
+
+            <a class="hot" id="welcome-hot" href="#" aria-label="Visit my portfolio"></a>
+
+            <div class="bar" id="welcome-bar">
+                <div class="knob">◀ ▶</div>
+            </div>
+
+            <span class="tag tl">My Resume</span>
+            <span class="tag tr">My portfolio</span>
+        </div>
+
+        <button class="welcome-cta" id="enter-portfolio">
+            Visit my portfolio <span aria-hidden="true">→</span>
+        </button>
+        <div class="welcome-url">asmbodji.github.io/portfolio</div>
+    </div>
+</div>
+    <!-- Alternance Banner -->
 <div id="alternance-banner" class="alternance-banner">
     <div class="banner-content">
         <span class="banner-close" onclick="closeBanner()">×</span>
@@ -2519,8 +2243,8 @@ body.dark .exp-tag {
             <i class="fas fa-briefcase"></i>
         </div>
         <div class="banner-text">
-            <h3> I am looking for an work study program!</h3>
-            <p><strong>As</strong> AI Engineer / Software Development</p>
+            <h3> I'm looking for a permanent position (CDI)!</h3>
+            <p><strong>As</strong> Junior IT Project Manager</p>
             <a href="#contact" class="btn-banner">Contact me</a>
         </div>
     </div>
@@ -2529,7 +2253,7 @@ body.dark .exp-tag {
 <!-- Floating button to reopen the banner -->
 <div id="banner-reopen" class="banner-reopen-btn" onclick="showBanner()">
     <i class="fas fa-briefcase"></i>
-    <span>WSP</span>
+    <span>CDI</span>
 </div>
        <div class="main-container">
      <div class="aside">
@@ -2540,7 +2264,7 @@ body.dark .exp-tag {
         <span></span>
     </div>
     
-    <!-- ADD: Photo and info for mobile menu -->
+    <!-- ADDED: Photo and info for mobile menu -->
     <div class="profile-mobile">
         <img src="pro.png" alt="Amadou Sow Mbodji">
         <h3>Amadou Sow Mbodji</h3>
@@ -2561,8 +2285,8 @@ body.dark .exp-tag {
             <div class="row">
                 <div class="home-info">
                     <h3 class="hello">Hello, my name is <span class="name">Amadou Sow Mbodji</span></h3>
-                    <h3 class="mon-domaine">I am a <span class="typing">Industrial IT and Machine Vision Technician.</span></h3>
-                    <p>Motivated, autonomous, and curious, I am eager to leverage my skills in software development, artificial intelligence, and IT project management within a dynamic organization. My academic background and professional experience have enabled me to build a strong technical foundation and develop a high level of adaptability, which I am now keen to apply to innovative projects while continuously expanding my expertise.
+                    <h3 class="mon-domaine">I am a <span class="typing">Information Systems and Software Development Technician</span></h3>
+                    <p> Motivated, autonomous and curious, I want to use my skills in software development, artificial intelligence and IT project management within a dynamic organization. My academic background and professional experiences have given me a solid technical foundation and adaptability that I now wish to put at the service of innovative projects, while continuing to develop my expertise.
                         
                         </p>
                     <a href="#contact" class="btn engagez-moi">Hire Me</a>
@@ -2590,16 +2314,17 @@ body.dark .exp-tag {
             <div class="about-content padd-15">
                 <div class="row">
                     <div class="about-text padd-15">
-                        <h3>I am Amadou Sow Mbodji, <span> passionate about IT, web development and AI. </span></h3>
+                        <h3>I am Amadou Sow Mbodji, <span> passionate about information systems, web development and AI. 💻📱</span></h3>
                         <p>
-                            I followed a technical training at CFPT Senegal/Japan, where I obtained a BTI in electromechanics then a BTS in industrial IT and networks.
-                            I then validated two professional licenses: one in network administration and security, and another in vision for industrial robotics at the University of Nîmes.
+                            I followed technical training at CFPT Senegal/Japan, where I obtained a BTI in electromechanics and then a BTS in industrial IT and networks. 
+                            I then completed two professional bachelor's degrees: one in network administration and security, and the other in computer vision at the University of Nîmes.
                         </p>
                         <div class="highlight-box">
-                            Passionate about data, web development and artificial intelligence, I have a solid foundation in programming (Python, Power BI, automation) as well as experience in image processing and data analysis.
-                            I am particularly interested in designing innovative solutions combining web development and AI technologies, with a performance and data exploitation oriented approach.
-                            My goal is to contribute to innovative projects while continuing to strengthen my technical skills, particularly in web development and integrating AI-based solutions.
-                            In the long term, I want to create my own company in the technology field.
+                          Passionate about information systems and digital technologies, I am mainly looking for a position as a Junior IT Project Manager, while
+remaining open to opportunities in software development and as an IT technician. My experiences have allowed me to develop skills in project management, coordination, software development and digital solution design. Motivated and versatile, I want to
+put my skills at the service of IT projects by ensuring the link between business needs and technical teams. In the long term,
+my ambition is to lead innovative technology projects and create a company specialized in digital technology to contribute to the
+digital transformation in Africa.
                         </div>
                     </div>
                 </div>
@@ -2618,7 +2343,7 @@ body.dark .exp-tag {
                                 <p>Email: <span>asmbodj@hotmail.com</span></p>
                             </div>
                             <div class="info-item padd-15">
-                                <p>Level: <span>Master's degree</span></p>
+                                <p>Level: <span>Master</span></p>
                             </div>
                             <div class="info-item padd-15">
                                 <p>Phone: <span>0758864201</span></p>
@@ -2629,8 +2354,8 @@ body.dark .exp-tag {
                         </div>
                         <div class="row">
                             <div class="buttons padd-15" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start;">
-                                <a href="CVSMCI.pdf" class="btn">Download CV</a>
-                                <a href="#contact" class="btn engagez-moi">Hire Me</a>
+                                <a href="CVSA.pdf" class="btn">Download CV</a> 
+                                <a href="#contact" class="btn engagez-moi">Hire me</a>
                                 <button class="btn" onclick="openModal('modal-projets')">My projects</button>
                                 <button class="btn" onclick="openModal('modal-competences')">Skills</button>
                             </div>
@@ -2639,7 +2364,7 @@ body.dark .exp-tag {
                     
                     <!-- RIGHT PART: SKILLS WHEEL -->
                     <div class="skills-wheel-wrapper padd-15">
-                        <h4 class="skills-wheel-title"> Languages & Frameworks</h4>
+                        <h4 class="skills-wheel-title">🎯 Languages & Frameworks</h4>
                         <div class="wheel-container">
                             <div class="wheel-wrapper">
                                 <div class="wheel" id="skillsWheel">
@@ -2724,7 +2449,7 @@ body.dark .exp-tag {
                     </div>
                 </div>
                 
-                <!-- TRAINING SECTION -->
+                <!-- EDUCATION SECTION -->
                 <div class="formation-section padd-15">
                     <h3 class="title">
                         Education
@@ -2739,7 +2464,7 @@ body.dark .exp-tag {
                                 <h3 class="formation-title">Master Data & AI</h3>
                                 <div class="info-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>At the Catholic University of Lille 🇫🇷</span>
+                                    <span>At Université Catholique de Lille 🇫🇷</span>
                                 </div>
                                 <div class="formation-status">
                                     <i class="fas fa-clock"></i>
@@ -2751,22 +2476,22 @@ body.dark .exp-tag {
                                 <div class="formation-header">
                                     <span class="formation-year">2024 - 2025</span>
                                     <div>
-                                        <span class="formation-tag">M1 validated</span>
+                                        <span class="formation-tag">M1 completed</span>
                                         <button class="info-badge" onclick="toggleInfo()">
                                             <i class="fas fa-info-circle"></i>
                                             <span class="pulse-dot"></span>
                                         </button>
                                     </div>
                                 </div>
-                                <h3 class="formation-title">Master 1 Information Technology Multimedia Products & Services</h3>
+                                <h3 class="formation-title">Master 1 Information Technology Products & Multimedia Services</h3>
                                 <div class="info-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>At the University of Marie & Louis Pasteur 🇫🇷</span>
+                                    <span>At Université de Marie & Louis Pasteur 🇫🇷</span>
                                 </div>
                                 <div id="info-box" class="info-box">
-                                    I had planned to continue with a Master 2 in the TDM path, but I was assigned to the Design, Creation and Multimedia Arts path,
-                                    which did not match my professional project or my academic background.
-                                    That's why I did not pursue the M2.
+                                    I had planned to continue in Master 2 with the TDM track, but I was assigned to the Conception, Creation and Multimedia Arts track, 
+                                    which did not match my professional project or my academic background. 
+                                    That is why I did not continue the M2. 
                                 </div>
                             </div>
 
@@ -2796,7 +2521,7 @@ body.dark .exp-tag {
                                 <div class="formation-header">
                                     <span class="formation-year">2021 - 2022</span>
                                 </div>
-                                <h3 class="formation-title">2nd year BTS in Industrial IT and Networking</h3>
+                                <h3 class="formation-title">2nd year BTS in Industrial IT and Networks</h3>
                                 <div class="info-item">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span>At the Senegal-Japan Vocational and Technical Training Center 🇸🇳</span>
@@ -2809,7 +2534,7 @@ body.dark .exp-tag {
                 <!-- DIPLOMA SECTION -->
                 <div class="diplome-section padd-15">
                     <h3 class="title">
-                        Diploma
+                        Diplomas
                         <button id="toggle-diplome" class="btn-diplome-toggle">Show ▼</button>
                     </h3>
                     <div class="diplome-content animated-collapse" id="diplome-box">
@@ -2819,7 +2544,7 @@ body.dark .exp-tag {
                                     <span class="diploma-year">2020</span>
                                     <span class="mention-badge mention-passable">
                                         <i class="fas fa-award"></i>
-                                        Passable Mention
+                                        Passable
                                     </span>
                                 </div>
                                 <h3 class="diploma-title">Industrial Technician Certificate in Electromechanics</h3>
@@ -2830,7 +2555,7 @@ body.dark .exp-tag {
                                     </div>
                                     <div class="info-item">
                                         <i class="fas fa-graduation-cap"></i>
-                                        <span>State Diploma - BAC Level</span>
+                                        <span>State Diploma - BAC level</span>
                                     </div>
                                 </div>
                                 <div class="diploma-footer">
@@ -2846,7 +2571,7 @@ body.dark .exp-tag {
                                     <span class="diploma-year">2021 - 2022</span>
                                     <span class="mention-badge mention-assezbien">
                                         <i class="fas fa-award"></i>
-                                        Fairly Good Mention
+                                        Fairly Good
                                     </span>
                                 </div>
                                 <h3 class="diploma-title">Two-year technical degree IT and Networking</h3>
@@ -2857,7 +2582,7 @@ body.dark .exp-tag {
                                     </div>
                                     <div class="info-item">
                                         <i class="fas fa-graduation-cap"></i>
-                                        <span>State Diploma - BAC+2 Level</span>
+                                        <span>State Diploma - BAC+2 level</span>
                                     </div>
                                 </div>
                                 <div class="diploma-footer">
@@ -2873,7 +2598,7 @@ body.dark .exp-tag {
                                     <span class="diploma-year">2022 - 2023</span>
                                     <span class="mention-badge mention-assezbien">
                                         <i class="fas fa-award"></i>
-                                        Fairly Good Mention
+                                        Fairly Good
                                     </span>
                                 </div>
                                 <h3 class="diploma-title">Bachelor degree in Network Administration & Security</h3>
@@ -2884,7 +2609,7 @@ body.dark .exp-tag {
                                     </div>
                                     <div class="info-item">
                                         <i class="fas fa-graduation-cap"></i>
-                                        <span>University Diploma - BAC+3 Level</span>
+                                        <span>University Diploma - BAC+3 level</span>
                                     </div>
                                 </div>
                                 <div class="diploma-footer">
@@ -2900,7 +2625,7 @@ body.dark .exp-tag {
                                     <span class="diploma-year">2023 - 2024</span>
                                     <span class="mention-badge mention-bien">
                                         <i class="fas fa-award"></i>
-                                        Good Mention
+                                        Good
                                     </span>
                                 </div>
                                 <h3 class="diploma-title">Bachelor degree in Computer Vision</h3>
@@ -2911,7 +2636,7 @@ body.dark .exp-tag {
                                     </div>
                                     <div class="info-item">
                                         <i class="fas fa-graduation-cap"></i>
-                                        <span>University Diploma - BAC+3 Level</span>
+                                        <span>University Diploma - BAC+3 level</span>
                                     </div>
                                 </div>
                                 <div class="diploma-footer">
@@ -2919,6 +2644,32 @@ body.dark .exp-tag {
                                         <div class="progress-bar" style="width: 85%"></div>
                                     </div>
                                     <span class="level">Level 6 (BAC+3)</span>
+                                </div>
+                            </div>
+                            <div class="diploma-card">
+                                <div class="diploma-header">
+                                    <span class="diploma-year">2024 - 2025</span>
+                                   <span class="mention-badge mention-passable">
+                                        <i class="fas fa-award"></i>
+                                        Passable
+                                    </span>
+                                </div>
+                                <h3 class="diploma-title">Master's in Information Technology</h3>
+                                <div class="diploma-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Université Marie Louis Pasteur 🇫🇷</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>University Diploma - BAC+4 level</span>
+                                    </div>
+                                </div>
+                                <div class="diploma-footer">
+                                    <div class="progress-indicator">
+                                        <div class="progress-bar" style="width: 89%"></div>
+                                    </div>
+                                    <span class="level">Level 6 (BAC+4)</span>
                                 </div>
                             </div>
                         </div>
@@ -2930,7 +2681,7 @@ body.dark .exp-tag {
                     <h3 class="title">School Locations</h3>
                     <div id="map"></div>
                     <p style="text-align: center; margin-top: 10px; color: #666; font-size: 14px;">
-                        <i class="fas fa-map-marker-alt" style="color: #e63946;"></i> Click on markers for details
+                        <i class="fas fa-map-marker-alt" style="color: #e63946;"></i> Click on the markers to see details
                     </p>
                 </div>
             </div>
@@ -2941,42 +2692,42 @@ body.dark .exp-tag {
                         <!-- Projects Modal -->
 <div id="modal-projets" class="custom-modal">
   <div class="modal-content">
-    <button class="close-modal" onclick="closeModal('modal-projets')">Close ✖</button>
+    <button class="close-modal" onclick="closeModal('modal-projets')">Close </button>
     <h3>My projects in detail</h3>
-    <p>Here are some projects I have completed and participated in:</p>
+    <p>Here are some projects I have completed and contributed to:</p>
     <ul style="text-align: left; padding-left: 1.2rem;">
-      <li><strong> GreenQuest :</strong> interactive game with connected figurines (JS, Arduino, Unity).</li>
-      <li><strong> Le Labyrinthe :</strong> escape game style mini-game with puzzles (Unity + C#).</li>
-      <li><strong> Flexibook :</strong> mobile appointment booking app connected to Firebase.</li>
-      <li><strong> Multimédia Store :</strong> e-commerce website.</li>
-      <li><strong> Network administration interface :</strong> anomaly detection via Python scripts and SNMP.</li>
-      <li><strong> Metrology system :</strong> real-time image processing with Halcon (university project).</li>
+      <li><strong> GreenQuest:</strong> interactive game with connected figurines (JS, Arduino, Unity).</li>
+      <li><strong> The Labyrinth:</strong> escape game-style mini-game with puzzles (Unity + C#).</li>
+      <li><strong> Flexibook:</strong> mobile app for online appointment booking connected to Firebase.</li>
+      <li><strong> Multimedia Store:</strong> e-commerce website.</li>
+      <li><strong> Network administration interface:</strong> anomaly detection via Python scripts and SNMP.</li>
+      <li><strong> Metrology system:</strong> real-time image processing with Halcon (university project).</li>
     </ul>
     <p> <a href="#contact">Contact me</a> if you want to know more or test one of these projects.</p>
   </div>
 </div>
 
-<!-- Skills & Objectives Modal -->
+<!-- Skills & Goals Modal -->
 <div id="modal-competences" class="custom-modal">
   <div class="modal-content">
     <button class="close-modal" onclick="closeModal('modal-competences')">Close ✖</button>
-    <h3>My key skills & professional objectives</h3>
-    <h4>🔧 Main technical skills :</h4>
+    <h3>My key skills & career goals</h3>
+    <h4>🔧 Main technical skills:</h4>
     <ul style="text-align: left; padding-left: 1.2rem;">
-      <li><strong>Development :</strong> Python, C++, Java, JS, Flutter, PHP, MySQL</li>
-      <li><strong>Front-end :</strong> HTML, CSS, Bootstrap, React (in progress), Tailwind</li>
-      <li><strong>Back-end :</strong> Node.js, Express, Firebase, REST API</li>
-      <li><strong>Mobile & AI :</strong> Flutter, TensorFlow, OpenCV</li>
-      <li><strong>Networks & systems :</strong> Linux, Network Security, Shell script</li>
+      <li><strong>Development:</strong> Python, C++, Java, JS, Flutter, PHP, MySQL</li>
+      <li><strong>Front-end:</strong> HTML, CSS, Bootstrap, React (in progress), Tailwind</li>
+      <li><strong>Back-end:</strong> Node.js, Express, Firebase, REST API</li>
+      <li><strong>Mobile & AI:</strong> Flutter, TensorFlow, OpenCV</li>
+      <li><strong>Networks & systems:</strong> Linux, Network security, Shell script</li>
     </ul>
-    <h4> Professional objectives :</h4>
+    <h4>🎯 Career goals:</h4>
     <p>
-      I want to join an innovative company to work on :
+      I want to join an innovative company to work on:
     </p>
     <ul style="text-align: left; padding-left: 1.2rem;">
-      <li> artificial intelligence or data projects</li>
-      <li> mobile or interactive multimedia solutions</li>
-      <li> integration of connected systems and IoT</li>
+      <li>🧠 AI or data projects</li>
+      <li>📱 mobile or interactive multimedia solutions</li>
+      <li>🔗 integration of connected systems and IoT</li>
     </ul>
     <p>I am motivated to learn, grow, and contribute to high-impact products. 💪</p>
   </div>
@@ -2989,7 +2740,7 @@ body.dark .exp-tag {
         <div class="row">
             <div class="section-title padd-15">
                 <h2>My Interests</h2>
-                <p>Discover what inspires me daily</p>
+                <p>Discover what inspires me every day</p>
             </div>
         </div>
         
@@ -3006,11 +2757,9 @@ body.dark .exp-tag {
                     </div>
                     <div class="interest-back">
                         <h3> Music</h3>
-                        <p>Passionate about music creation and exploring different genres. I am interested in computer-assisted production.</p>
+                        <p>Passionate about music creation and exploring different genres. I'm interested in computer-assisted production.</p>
                         <div class="interest-tags">
-                            <span class="tag">Guitar</span>
-                            <span class="tag">Production</span>
-                            <span class="tag">Concerts</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -3030,9 +2779,7 @@ body.dark .exp-tag {
                         <h3> Martial Arts</h3>
                         <p>Regular practice of Karate to develop discipline, concentration and self-control.</p>
                         <div class="interest-tags">
-                            <span class="tag">Discipline</span>
-                            <span class="tag">Concentration</span>
-                            <span class="tag">Balance</span>
+                          
                         </div>
                     </div>
                 </div>
@@ -3049,12 +2796,10 @@ body.dark .exp-tag {
                         <p>Click to discover</p>
                     </div>
                     <div class="interest-back">
-                        <h3> Football</h3>
+                        <h3>  Football</h3>
                         <p>Passionate about team sports, football taught me the importance of collaboration, strategy and perseverance to achieve a common goal.</p>
                         <div class="interest-tags">
-                            <span class="tag">Team</span>
-                            <span class="tag">Strategy</span>
-                            <span class="tag">Competition</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -3072,11 +2817,9 @@ body.dark .exp-tag {
                     </div>
                     <div class="interest-back">
                         <h3> Video Games</h3>
-                        <p>Interest in the gaming universe, particularly games that combine immersive storytelling and strategic challenges. A source of inspiration for my development projects.</p>
+                        <p>Interest in the gaming world, especially games that combine immersive storytelling and strategic challenges. A source of inspiration for my development projects.</p>
                         <div class="interest-tags">
-                            <span class="tag">Strategy</span>
-                            <span class="tag">Narrative</span>
-                            <span class="tag">Innovation</span>
+                           
                         </div>
                     </div>
                 </div>
@@ -3116,7 +2859,7 @@ body.dark .exp-tag {
     margin-bottom: 40px;
 }
 
-/* Cards container */
+/* Card container */
 .interests-container {
     display: flex;
     flex-wrap: wrap;
@@ -3179,7 +2922,315 @@ body.dark .exp-tag {
     border: 1px solid #e0e0e0;
     text-align: center;
 }
+/* ========== PROFESSIONAL EXPERIENCE SECTION ========== */
+.experiences {
+    padding: 40px 0 60px;
+    background: var(--bg-black-900);
+}
 
+.section-subtitle {
+    text-align: center;
+    color: var(--text-black-700);
+    font-size: 1rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/* Experience timeline */
+.experiences-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.experience-item {
+    flex: 0 0 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+    min-width: 280px;
+}
+
+.experience-card {
+    background: var(--bg-black-100);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--bg-black-50);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(230, 57, 70, 0.15);
+    border-color: var(--skin-color);
+}
+
+/* Header with image */
+.experience-header {
+    position: relative;
+}
+
+.experience-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.experience-card:hover .experience-image img {
+    transform: scale(1.05);
+}
+
+.experience-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.experience-badge {
+    display: inline-block;
+    padding: 5px 16px;
+    background: linear-gradient(135deg, #e63946, #ff6b6b);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+}
+
+/* Metadata */
+.experience-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 0;
+    font-size: 13px;
+    color: var(--text-black-700);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-meta i {
+    color: var(--skin-color);
+    margin-right: 5px;
+}
+
+/* Card body */
+.experience-body {
+    padding: 15px 20px 25px;
+    flex: 1;
+}
+
+.experience-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.experience-company {
+    font-size: 0.95rem;
+    color: var(--skin-color);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* Tags */
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.exp-tag {
+    display: inline-block;
+    padding: 3px 12px;
+    background: rgba(230, 57, 70, 0.1);
+    color: var(--skin-color);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid rgba(230, 57, 70, 0.2);
+}
+
+/* Details */
+.experience-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-black-700);
+    padding: 6px 0;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.experience-details li:last-child {
+    border-bottom: none;
+}
+
+.experience-details li i {
+    color: var(--skin-color);
+    font-size: 14px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* Statistics */
+.experience-stats {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat-item {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    min-width: 180px;
+}
+
+.stat-card {
+    background: var(--bg-black-100);
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--bg-black-50);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--skin-color);
+    box-shadow: 0 10px 30px rgba(230, 57, 70, 0.1);
+}
+
+.stat-icon {
+    font-size: 35px;
+    color: var(--skin-color);
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-black-900);
+    line-height: 1.2;
+    background: linear-gradient(135deg, #e63946, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-black-700);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .experience-item {
+        flex: 0 0 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .experience-image {
+        height: 180px;
+    }
+    
+    .experience-meta {
+        font-size: 12px;
+        padding: 12px 15px 0;
+    }
+    
+    .experience-body {
+        padding: 12px 15px 20px;
+    }
+    
+    .experience-title {
+        font-size: 1rem;
+    }
+    
+    .stat-item {
+        flex: 0 0 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+        min-width: auto;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .experience-image {
+        height: 160px;
+    }
+}
+
+/* Dark mode */
+body.dark .experience-card {
+    background: var(--bg-black-100);
+    border-color: var(--bg-black-50);
+}
+
+body.dark .experience-title {
+    color: var(--text-black-900);
+}
+
+body.dark .experience-details li {
+    color: var(--text-black-700);
+    border-bottom-color: var(--bg-black-50);
+}
+
+body.dark .stat-card {
+    background: var(--bg-black-100);
+    border-color: var(--bg-black-50);
+}
+
+body.dark .stat-number {
+    background: linear-gradient(135deg, #ff6b6b, #e63946);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark .exp-tag {
+    background: rgba(230, 57, 70, 0.2);
+    border-color: rgba(230, 57, 70, 0.3);
+}
 .interest-icon {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -3533,7 +3584,7 @@ body {
     box-shadow: 0 8px 25px rgba(230, 57, 70, 0.5);
 }
 
-/* Appearance animation */
+/* Apparition animation */
 @keyframes slideInButton {
     from {
         opacity: 0;
@@ -3598,7 +3649,7 @@ body {
     font-weight: 500;
 }
 
-/* Entry animation for cards */
+/* Card entrance animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -3626,7 +3677,7 @@ body {
 .interest-card:nth-child(3) {
     animation-delay: 0.3s;
 }
-/* QR Code Section - Instead of video */
+/* QR Code Section - Replaces the video */
 .qr-section-main {
     text-align: center;
     padding: 40px 30px;
@@ -3839,6 +3890,261 @@ body {
         font-size: 2.2rem;
     }
 }
+
+
+/* ===== WELCOME OVERLAY ===== */
+.welcome-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99990;
+    background: #0f0f12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 16px;
+    overflow-y: auto;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.welcome-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.welcome-inner {
+    width: 100%;
+    max-width: 980px;
+    text-align: center;
+    color: #f4f1ee;
+}
+
+.welcome-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.9rem, 5.5vw, 3rem);
+    margin: 0 0 10px;
+    letter-spacing: 0.01em;
+}
+
+.welcome-title em {
+    font-style: normal;
+    color: #e63946;
+}
+
+.welcome-sub {
+    margin: 0 0 6px;
+    color: #a8a3a6;
+    font-size: 0.95rem;
+}
+
+.welcome-rule {
+    width: 64px;
+    height: 2px;
+    background: #e63946;
+    margin: 14px auto 26px;
+}
+
+/* Comparator */
+.cmp {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    aspect-ratio: 1395/1171;
+    border-radius: 18px;
+    overflow: hidden;
+    user-select: none;
+    touch-action: pan-y;
+    cursor: ew-resize;
+    background: radial-gradient(120% 100% at 0% 100%, #3a1417 0%, #17171b 55%);
+    box-shadow: 0 24px 60px -20px #000c, 0 0 0 1px #ffffff14;
+    margin: 0 auto;
+}
+
+.cv {
+    position: absolute;
+    top: 3%;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 94%;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 0 12px 40px #0009;
+    pointer-events: none;
+    max-width: none;
+}
+
+.top {
+    position: absolute;
+    inset: 0;
+    clip-path: inset(0 0 0 50%);
+}
+
+.top img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.hot {
+    position: absolute;
+    left: 5%;
+    top: 59.3%;
+    width: 30.7%;
+    height: 9.4%;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background 0.3s;
+    z-index: 5;
+}
+
+.hot:hover,
+.hot:focus-visible {
+    background: #e6394620;
+    box-shadow: 0 0 0 2px #e63946, 0 0 28px #e6394688;
+    outline: none;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background: linear-gradient(#fff0, #fff 12%, #fff 88%, #fff0);
+    pointer-events: none;
+    z-index: 4;
+}
+
+.knob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    border-radius: 50%;
+    background: #fffffff2;
+    color: #1a1719;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 18px #000a;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.tag {
+    position: absolute;
+    top: 14px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #0009;
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-size: clamp(0.7rem, 2.3vw, 0.85rem);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.tl { left: 14px; }
+.tr { right: 14px; }
+
+/* CTA button */
+.welcome-cta {
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 30px;
+    border-radius: 999px;
+    background: #e63946;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 10px 30px -8px #e63946b0;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.welcome-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px -8px #e63946cc;
+}
+
+.welcome-url {
+    margin-top: 12px;
+    color: #a8a3a6;
+    font-size: 0.8rem;
+}
+
+/* ===== TRANSITION BARS (red + deep black) ===== */
+html.pt-covering::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: #0f0f12;
+    z-index: 99998;
+}
+
+.pt-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.pt-overlay.is-active {
+    visibility: visible;
+    pointer-events: all;
+}
+
+.pt-bar {
+    position: absolute;
+    left: -160px;
+    width: calc(100% + 320px);
+    border-radius: 999px;
+    transform: translateX(-101%);
+    will-change: transform;
+}
+
+.pt-label {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.6rem, 5vw, 2.8rem);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.pt-overlay.show-label .pt-label {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pt-overlay,
+    html.pt-covering::before {
+        display: none !important;
+    }
+}
 </style>
 
 <script>
@@ -3864,10 +4170,10 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
     
-    // Click animation for mobile (hover alternative)
+    // Click animation for mobile (alternative to hover)
     document.querySelectorAll('.interest-card').forEach(card => {
         card.addEventListener('click', function() {
-            // On mobile, we can add an active class for animation
+            // On mobile, we can add an active class for the animation
             if (window.innerWidth <= 768) {
                 this.classList.toggle('active');
             }
@@ -3880,7 +4186,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="row">
             <div class="section-title padd-15">
                 <h2>Skills</h2>
-                <p class="section-subtitle"></p>
+                <p class="section-subtitle">What I master</p>
             </div>
         </div>
         
@@ -3893,7 +4199,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <i class="fa fa-mobile-alt"></i>
                         </div>
                         <h4>Web Design</h4>
-                        <p>Creation of modern and responsive interfaces</p>
+                        <p>Creating modern and responsive interfaces</p>
                         <span class="skill-level-badge">Advanced</span>
                     </div>
                     <div class="skill-card-back">
@@ -3983,7 +4289,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span class="skill-level-badge">Intermediate</span>
                     </div>
                     <div class="skill-card-back">
-                        <h4>Vision</h4>
+                        <h4> Vision</h4>
                         <ul>
                             <li>OpenCV / Halcon</li>
                             <li>Object detection</li>
@@ -4027,14 +4333,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
             
-            <!-- Card 6 - Database -->
+            <!-- Card 6 - Databases -->
             <div class="skill-card-wrapper padd-15">
                 <div class="skill-card">
                     <div class="skill-card-front">
                         <div class="skill-icon">
                             <i class="fa-solid fa-database"></i>
                         </div>
-                        <h4>Database</h4>
+                        <h4>Databases</h4>
                         <p>Management and optimization</p>
                         <span class="skill-level-badge">Advanced</span>
                     </div>
@@ -4043,8 +4349,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <ul>
                             <li>MySQL / PostgreSQL</li>
                             <li>MongoDB</li>
-                            <li>Modeling</li>
-                            <li>SQL Optimization</li>
+                            <li>Data modeling</li>
+                            <li>SQL optimization</li>
                         </ul>
                         <div class="skill-progress">
                             <div class="progress-bar" style="width: 85%">
@@ -4063,16 +4369,16 @@ document.addEventListener('DOMContentLoaded', function() {
                             <i class="fa-solid fa-wrench"></i>
                         </div>
                         <h4>Maintenance</h4>
-                        <p>Diagnosis and repair</p>
+                        <p>Diagnostics and repair</p>
                         <span class="skill-level-badge">Expert</span>
                     </div>
                     <div class="skill-card-back">
                         <h4> Maintenance</h4>
                         <ul>
-                            <li>PC Diagnosis</li>
-                            <li>Hardware Repair</li>
-                            <li>System Optimization</li>
-                            <li>Technical Support</li>
+                            <li>PC diagnostics</li>
+                            <li>Hardware repair</li>
+                            <li>System optimization</li>
+                            <li>Technical support</li>
                         </ul>
                         <div class="skill-progress">
                             <div class="progress-bar" style="width: 90%">
@@ -4095,7 +4401,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span class="skill-level-badge">Expert</span>
                     </div>
                     <div class="skill-card-back">
-                        <h4>OS</h4>
+                        <h4> OS</h4>
                         <ul>
                             <li>Windows (7/10/11)</li>
                             <li>Linux (Ubuntu/Kali)</li>
@@ -4141,14 +4447,14 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 </section>
-           <!-- ========== MASTERED SOFTWARE & TOOLS - ELEGANT VERSION ========== -->
+           <!-- ========== SOFTWARE & TOOLS MASTERED - ELEGANT VERSION ========== -->
 <div class="software-skills-elegant padd-15">
     <div class="software-header">
         <h4 class="software-title">
             <span class="title-icon"></span> 
-            Mastered Software & Tools
+            Software & Tools Mastered
         </h4>
-        <p class="software-subtitle">Technologies I use daily</p>
+        <p class="software-subtitle">The technologies I use every day</p>
     </div>
     
     <div class="software-grid">
@@ -4249,7 +4555,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="software-hover">
                     <i class="fab fa-github"></i>
-                    <span>Version management</span>
+                    <span>Version control</span>
                 </div>
             </div>
         </div>
@@ -4296,7 +4602,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="software-info">
                     <h5>Canva</h5>
-                    <span class="software-category">Graphic design</span>
+                    <span class="software-category">Graphic Design</span>
                 </div>
                 <div class="software-hover">
                     <i class="fas fa-palette"></i>
@@ -4340,14 +4646,14 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         
         <!-- Microsoft Office -->
-        <div class="software-card" data-tool="Bureautique">
+        <div class="software-card" data-tool="Office">
             <div class="software-card-inner">
                 <div class="software-icon">
                     <img src="images/logo/moffice.png" alt="Office">
                 </div>
                 <div class="software-info">
                     <h5>MS Office</h5>
-                    <span class="software-category">Office suite</span>
+                    <span class="software-category">Office Suite</span>
                 </div>
                 <div class="software-hover">
                     <i class="fas fa-file-alt"></i>
@@ -4374,7 +4680,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         
         <!-- VMware -->
-        <div class="software-card" data-tool="Virtualisation">
+        <div class="software-card" data-tool="Virtualization">
             <div class="software-card-inner">
                 <div class="software-icon">
                     <img src="images/logo/Vmware.png" alt="VMware">
@@ -4444,7 +4750,7 @@ document.addEventListener('DOMContentLoaded', function() {
     opacity: 0.8;
 }
 
-/* Cards grid */
+/* Card grid */
 .software-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -4610,7 +4916,7 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
 }
 
-/* Entry animation */
+/* Entrance animation */
 @keyframes softwareFadeIn {
     from {
         opacity: 0;
@@ -4755,7 +5061,155 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<script>
+/* ===== WELCOME OVERLAY + TRANSITION ===== */
+(function () {
+    'use strict';
 
+    // ----- Bar configuration (Option B: red + deep black) -----
+    const CONFIG = {
+        colors: ['#e63946', '#c1121f', '#1a1a1a', '#0f0f12', '#1a1a1a', '#c1121f', '#e63946'],
+        duration: 700,
+        stagger: 70,
+        easing: 'cubic-bezier(.76, 0, .24, 1)'
+    };
+
+    const root = document.documentElement;
+    let overlay, bars = [], label, busy = false;
+
+    // ----- Build the transition overlay -----
+    function buildTransition() {
+        overlay = document.createElement('div');
+        overlay.className = 'pt-overlay';
+        overlay.setAttribute('aria-hidden', 'true');
+
+        const n = CONFIG.colors.length;
+        for (let i = 0; i < n; i++) {
+            const bar = document.createElement('div');
+            bar.className = 'pt-bar';
+            bar.style.background = CONFIG.colors[i];
+            bar.style.top = (i * 100 / n) + '%';
+            bar.style.height = (100 / n * 1.9) + '%';
+            bar.style.zIndex = i + 1;
+            overlay.appendChild(bar);
+            bars.push(bar);
+        }
+
+        label = document.createElement('div');
+        label.className = 'pt-label';
+        label.textContent = 'Portfolio';
+        overlay.appendChild(label);
+
+        document.body.appendChild(overlay);
+    }
+
+    function animateBars(from, to) {
+        let last;
+        bars.forEach((bar, i) => {
+            last = bar.animate(
+                [{ transform: from }, { transform: to }],
+                { duration: CONFIG.duration, delay: i * CONFIG.stagger, easing: CONFIG.easing, fill: 'both' }
+            );
+        });
+        return last.finished;
+    }
+
+    function resetOverlay() {
+        bars.forEach(b => {
+            b.getAnimations().forEach(a => a.cancel());
+            b.style.transform = '';
+        });
+        overlay.classList.remove('is-active', 'show-label');
+        root.classList.remove('pt-covering');
+        busy = false;
+    }
+
+    // ----- Launch the transition and reveal the portfolio -----
+    function enterPortfolio() {
+        if (busy) return;
+        busy = true;
+
+        overlay.classList.add('is-active');
+        root.classList.add('pt-covering');
+
+        animateBars('translateX(-101%)', 'translateX(0)').then(() => {
+            overlay.classList.add('show-label');
+
+            // After a short delay, hide the welcome and reveal the site
+            setTimeout(() => {
+                const welcome = document.getElementById('welcome-overlay');
+                if (welcome) {
+                    welcome.classList.add('hidden');
+                }
+
+                // Keep the label a bit longer, then open the bars
+                setTimeout(() => {
+                    overlay.classList.remove('show-label');
+                    animateBars('translateX(0)', 'translateX(101%)').then(() => {
+                        resetOverlay();
+                    });
+                }, 600);
+            }, 400);
+        });
+    }
+
+    // ----- CV / Portfolio slider -----
+    function initSlider() {
+        const cmp = document.getElementById('welcome-cmp');
+        const top = document.getElementById('welcome-top');
+        const bar = document.getElementById('welcome-bar');
+        if (!cmp || !top || !bar) return;
+
+        function set(p) {
+            p = Math.max(0, Math.min(100, p));
+            top.style.clipPath = `inset(0 0 0 ${p}%)`;
+            bar.style.left = p + '%';
+            cmp.setAttribute('aria-valuenow', Math.round(p));
+        }
+
+        function mv(e) {
+            const r = cmp.getBoundingClientRect();
+            set((e.clientX - r.left) / r.width * 100);
+        }
+
+        let dragging = false;
+
+        cmp.addEventListener('pointerdown', e => {
+            dragging = true;
+            cmp.setPointerCapture(e.pointerId);
+            mv(e);
+        });
+        cmp.addEventListener('pointermove', e => { if (dragging) mv(e); });
+        cmp.addEventListener('pointerup', () => dragging = false);
+        cmp.addEventListener('pointercancel', () => dragging = false);
+
+        cmp.addEventListener('keydown', e => {
+            const v = +cmp.getAttribute('aria-valuenow');
+            if (e.key === 'ArrowLeft') set(v - 5);
+            if (e.key === 'ArrowRight') set(v + 5);
+        });
+    }
+
+    // ----- Initialization -----
+    document.addEventListener('DOMContentLoaded', () => {
+        buildTransition();
+        initSlider();
+
+        // Main button
+        const btn = document.getElementById('enter-portfolio');
+        if (btn) btn.addEventListener('click', enterPortfolio);
+
+        // Slider hotspot
+        const hot = document.getElementById('welcome-hot');
+        if (hot) {
+            hot.addEventListener('click', e => {
+                e.preventDefault();
+                enterPortfolio();
+            });
+        }
+    });
+})();
+</script>
         </section>
  <section id="about" data-aos="fade-right" data-aos-duration="1000">
         ...
@@ -4778,7 +5232,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
 <style>
-/* ========== ELEGANT SKILLS CARDS ========== */
+/* ========== ELEGANT SKILL CARDS ========== */
 .section-subtitle {
     text-align: center;
     color: var(--text-black-700);
@@ -4897,7 +5351,7 @@ document.addEventListener('DOMContentLoaded', function() {
     border: 1px solid rgba(230, 57, 70, 0.3);
 }
 
-/* Back face content */
+/* Back face - content */
 .skill-card-back h4 {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -5055,7 +5509,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }
 
-/* Entry animation */
+/* Entrance animation */
 @keyframes cardGlow {
     0% {
         opacity: 0;
@@ -5091,7 +5545,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="portfolio-img">
                 <img src="./study.gif" alt="BTS Project">
             </div>
-            <h3>Studyboost: website for online math & physics tutoring</h3>
+            <h3>Studyboost: website for online math & physics tutoring courses</h3>
             <div class="portfolio-btn">
                 <a class="btn-visit-site"
                    href="https://asmbod.infinityfreeapp.com/login.php"
@@ -5107,9 +5561,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="portfolio-item ma">
                 <div class="portfolio-item-inner shadow-dark">
                     <div class="portfolio-img">
-                        <img src="./imge.png" alt="MV Project">
+                        <img src="./imge.png" alt="MV project">
                     </div>
-                    <h3>My tutored project in professional license VRI</h3>
+                    <h3>My tutored project in the VRI professional bachelor's degree</h3>
                     <div class="portfolio-btn">
                         <button class="btn-see-more"
                                 onclick="openPopup(this)"
@@ -5122,6 +5576,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
           
 
+            <!-- Project 3 - Game -->
             <!-- Project 3 - Game -->
 <!-- Project 3 - Game -->
 <div class="portfolio-item ia">
@@ -5152,12 +5607,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             <source src="./video.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>My Master project: Mobile appointment booking app</h3>
+                    <h3>My Master's project: Mobile app for online appointment booking</h3>
                     <div class="portfolio-btn">
                         <button class="btn-see-more"
                                 onclick="openPopup(this)"
                                 data-image="./flex.png"
-                                data-title="My Master project: Mobile appointment booking app">
+                                data-title="My Master's project: Mobile app for online appointment booking">
                             See more
                         </button>
                     </div>
@@ -5169,32 +5624,37 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="portfolio-item web">
                 <div class="portfolio-item-inner shadow-dark">
                     <div class="portfolio-img">
-                        <img src="./im1.jpg" alt="BTS Project">
+                        <img src="./im2.png" alt="BTS Project">
                     </div>
-                    <h3>My BTS project: Creating an e-commerce website for a company</h3>
+                    <h3>My BTS project: Building an e-commerce website for a company</h3>
                     <div class="portfolio-btn">
-                        <button class="btn-see-more"
-                                onclick="openPopup(this)"
-                                data-image="./im1.jpg"
-                                data-title="My BTS project: Creating an e-commerce website for a company">
-                            See more
-                        </button>
+                       <button class="btn-see-more"
+        onclick="openPopup(this)"
+        data-image="./im3.png"
+        data-title="My BTS project: Building an e-commerce website for a company"
+        data-website="http://amdyso.infinityfree.io/">
+    See more
+</button>
                     </div>
                 </div>
             </div>
 </section>
-<!-- SECTION EXPÉRIENCES PROFESSIONNELLES -->
+
+        
+        
+        </section>
+        <!-- PROFESSIONAL EXPERIENCE SECTION -->
 <section class="experiences section" id="experiences">
     <div class="container">
         <div class="row">
             <div class="section-title padd-15">
-                <h2>Work Experience</h2>
+                <h2>Professional Experience</h2>
                 <p class="section-subtitle"></p>
             </div>
         </div>
 
         <div class="row experiences-timeline">
-            <!-- Expérience 1 - Hôpital Principal de Dakar -->
+            <!-- Experience 1 - Hôpital Principal de Dakar -->
             <div class="experience-item padd-15">
                 <div class="experience-card">
                     <div class="experience-header">
@@ -5210,7 +5670,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                     <div class="experience-body">
-                        <h3 class="experience-title">Medical Image Processing</h3>
+                        <h3 class="experience-title">Image Processing </h3>
                         <h4 class="experience-company">Hôpital Principal de Dakar</h4>
                         <div class="experience-tags">
                             <span class="exp-tag">HALCON</span>
@@ -5218,7 +5678,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <span class="exp-tag">Medical Imaging</span>
                         </div>
                         <ul class="experience-details">
-                            <li><i class="fas fa-check-circle"></i> Implementation of image processing algorithms for segmentation and detection of anatomical structures</li>
+                            <li><i class="fas fa-check-circle"></i> Implemented image processing algorithms for segmentation and detection of anatomical structures using machine learning</li>
                             <li><i class="fas fa-check-circle"></i> Quantitative analysis on medical imaging data</li>
                             <li><i class="fas fa-check-circle"></i> Preventive maintenance of imaging equipment</li>
                         </ul>
@@ -5226,7 +5686,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
 
-            <!-- Expérience 2 - Freelance -->
+            <!-- Experience 2 - Freelance -->
             <div class="experience-item padd-15">
                 <div class="experience-card">
                     <div class="experience-header">
@@ -5242,7 +5702,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                     <div class="experience-body">
-                        <h3 class="experience-title">Web Development for E-commerce</h3>
+                        <h3 class="experience-title">E-commerce Web Development</h3>
                         <h4 class="experience-company">Freelance</h4>
                         <div class="experience-tags">
                             <span class="exp-tag">HTML/CSS</span>
@@ -5250,15 +5710,15 @@ document.addEventListener('DOMContentLoaded', function() {
                             <span class="exp-tag">PHP</span>
                         </div>
                         <ul class="experience-details">
-                            <li><i class="fas fa-check-circle"></i> Design and development of a comprehensive e-commerce website</li>
-                            <li><i class="fas fa-check-circle"></i> Creation of a responsive user interface</li>
-                            <li><i class="fas fa-check-circle"></i> Management of products, orders and user authentication</li>
+                            <li><i class="fas fa-check-circle"></i> Designed and developed a complete e-commerce website</li>
+                            <li><i class="fas fa-check-circle"></i> Created the responsive user interface</li>
+                            <li><i class="fas fa-check-circle"></i> Managed products, orders and user authentication</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Expérience 3 - CBAO -->
+            <!-- Experience 3 - CBAO -->
             <div class="experience-item padd-15">
                 <div class="experience-card">
                     <div class="experience-header">
@@ -5277,57 +5737,53 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h3 class="experience-title">IT Project Management</h3>
                         <h4 class="experience-company">CBAO - Groupe Attijariwafa Bank</h4>
                         <div class="experience-tags">
-                            <span class="exp-tag">Project Management</span>
-                            <span class="exp-tag">Digital Solutions</span>
-                            <span class="exp-tag">Project Tracking</span>
+                            <span class="exp-tag">Project management</span>
+                            <span class="exp-tag">Digital solutions</span>
+                            <span class="exp-tag">Project tracking</span>
                         </div>
                         <ul class="experience-details">
-                            <li><i class="fas fa-check-circle"></i> Consolidation and tracking of IT projects</li>
-                            <li><i class="fas fa-check-circle"></i> Design of digital solutions for CRA management</li>
-                            <li><i class="fas fa-check-circle"></i> Technical support and team mentoring</li>
+                            <li><i class="fas fa-check-circle"></i> Consolidated and monitored IT projects</li>
+                            <li><i class="fas fa-check-circle"></i> Designed digital solutions for CRA management</li>
+                            <li><i class="fas fa-check-circle"></i> Technical support and team assistance</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Section Statistiques -->
+        <!-- Statistics Section -->
         <div class="row experience-stats">
             <div class="stat-item padd-15">
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
                     <div class="stat-number">3</div>
-                    <div class="stat-label">Professional Experiences</div>
+                    <div class="stat-label">Professional experiences</div>
                 </div>
             </div>
             <div class="stat-item padd-15">
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-clock"></i></div>
                     <div class="stat-number">8</div>
-                    <div class="stat-label">Months of Experience</div>
+                    <div class="stat-label">Months of experience</div>
                 </div>
             </div>
             <div class="stat-item padd-15">
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-code"></i></div>
                     <div class="stat-number">3</div>
-                    <div class="stat-label">Projects Completed</div>
+                    <div class="stat-label">Projects completed</div>
                 </div>
             </div>
             <div class="stat-item padd-15">
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-globe-africa"></i></div>
                     <div class="stat-number">1</div>
-                    <div class="stat-label">Countries of Experience</div>
+                    <div class="stat-label">Country of experience</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-        
-        
-        </section>
-        
            </section>
 <!-- Current Project Section - New Elegant Design -->
 <section class="current-project section" id="current-project">
@@ -5351,7 +5807,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                         <div class="qr-link">
                             <a href="https://youtu.be/VqGsNbsqjm8" target="_blank">
-                                <i class="fab fa-youtube"></i> Watch demo video
+                                <i class="fab fa-youtube"></i> Watch the demo video
                             </a>
                         </div>
                     </div>
@@ -5361,12 +5817,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="project-details">
                     <div class="project-badge">
                         <span class="pulse-dot"></span>
-                        <span>IN ACTIVE DEVELOPMENT</span>
+                        <span>ACTIVELY IN DEVELOPMENT</span>
                     </div>
                     
                     <h2>
                         <span class="highlight">Roomify</span>
-                        <br>AI-assisted <br>Interior Decoration
+                        <br>AI-assisted interior <br>decoration
                     </h2>
                     
                     <p class="project-short-desc">
@@ -5400,7 +5856,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="feature-icon"><i class="fas fa-shopping-cart"></i></div>
                             <div class="feature-text">
                                 E-commerce
-                                <small>Integrated purchase</small>
+                                <small>Integrated purchasing</small>
                             </div>
                         </div>
                     </div>
@@ -5453,7 +5909,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <!-- Timeline -->
                     <div class="project-timeline">
                         <div class="timeline-milestone">
-                            <span class="milestone-date">Sep 2025</span>
+                            <span class="milestone-date">Sept 2025</span>
                             <span class="milestone-label">Project start</span>
                         </div>
                         <div class="timeline-milestone">
@@ -5468,7 +5924,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <i class="fas fa-rocket"></i> Let's discuss the project
                         </a>
                         <button class="btn-outline" onclick="openDemoModal()">
-                            <i class="fas fa-play-circle"></i> Watch demo
+                            <i class="fas fa-play-circle"></i> View demo
                         </button>
                     </div>
                 </div>
@@ -5483,8 +5939,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h2>Contact Me</h2>
                     </div>
                 </div>
-                <h3 class="contact-title padd-15">Do you have any questions ?</h3>
-                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+                <h3 class="contact-title padd-15">Do you have any questions?</h3>
+                <h4 class="contact-sub-title padd-15">I AM AT YOUR SERVICE</h4>
         
                 <div class="row contact-buttons">
   <a href="tel:0758864201" class="contact-card padd-15 phone-unavailable-tooltip">
@@ -5502,7 +5958,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <span>Information</span>
         </span>
         <span class="tooltip-body">
-            <span class="tooltip-line">Currently unreachable on this number because I am abroad.</span>
+            <span class="tooltip-line">Currently unreachable at this number as I am abroad.</span>
             <span class="tooltip-divider"></span>
             <span class="tooltip-email">
                 <i class="fas fa-envelope"></i>
@@ -5516,7 +5972,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <a href="https://www.google.com/maps/place/18+Rue+Victor+Hugo,+69190+Saint-Fons" target="_blank" class="contact-card padd-15">
     <div class="icon"><i class="fa fa-map-marker"></i></div>
     <h4>Address</h4>
-    <p>18 rue victor hugo, Saint-fons</p>
+    <p>18 rue Victor Hugo, Saint-Fons</p>
   </a>
 
   <a href="mailto:asmbodj@hotmail.com" class="contact-card padd-15">
@@ -5528,14 +5984,14 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="contact-card padd-15" id="availability-card">
   <div class="icon"><i class="fa fa-clock"></i></div>
   <h4>Availability</h4>
-  <p>Click to see</p>
+  <p>Click to view</p>
 </div>
 
 <!-- Calendar popup -->
 <div id="calendar-popup" class="calendar-popup">
   <div class="calendar-content">
     <span class="close-btn" id="closeCalendar">&times;</span>
-    <h3>Availabilities</h3>
+    <h3>Availability</h3>
     <table class="calendar-table">
       <thead>
         <tr>
@@ -5600,7 +6056,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
-                                        <button type="submit" class="btn">Send message</button>
+                                        <button type="submit" class="btn">Send a message</button>
                                     </div>
                                 </div>
                             </form>
@@ -5657,12 +6113,12 @@ document.addEventListener('DOMContentLoaded', function() {
   AOS.init();
 </script>
 
-<!-- IMPROVED SCRIPT FOR MAP ONLY -->
+<!-- ENHANCED SCRIPT FOR THE MAP ONLY -->
 <script>
-    // Map initialization
+    // Initialize the map
     const map = L.map('map').setView([14.6928, -17.4467], 5);
     
-    // More modern basemap
+    // More modern base map
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         maxZoom: 18,
@@ -5674,7 +6130,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'universite': '#e63946',  // Red - Universities
         'ecole': '#1e1e1e',       // Black - Higher schools
         'centre': '#007BFF',      // Blue - Training centers
-        'formation': '#28a745'    // Green - Trainings
+        'formation': '#28a745'    // Green - Training
     };
     
     // Custom icons
@@ -5721,7 +6177,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Schools data with MULTIPLE DIPLOMAS for training center
+    // School data with MULTIPLE DIPLOMAS for the training center
     const schools = [
         {
             id: 1,
@@ -5732,26 +6188,26 @@ document.addEventListener('DOMContentLoaded', function() {
             period: "2023 - 2024",
             diplomes: [
                 {
-                    nom: "Professional Degree in Vision for Industrial Robotics",
-                    mention: "Good Mention",
+                    nom: "Professional Bachelor's in Vision for Industrial Robotics",
+                    mention: "Good",
                     annee: "2024"
                 }
             ],
             description: "Specialized training in industrial vision and robotics with HALCON",
             ville: "Nîmes",
-            details: "Acquisition of skills in image processing, HALCON programming and integration of industrial vision systems."
+            details: "Acquired skills in image processing, HALCON programming and integration of industrial vision systems."
         },
         {
             id: 2,
-            name: "University of Marie & Louis Pasteur",
+            name: "Université Marie & Louis Pasteur",
             country: "🇫🇷",
             type: "universite",
             location: [47.510356, 6.798466],
             period: "2024 - 2025",
             diplomes: [
                 {
-                    nom: "Master 1 Information Technology Multimedia Products & Services",
-                    mention: "M1 validated",
+                    nom: "Master 1 Information Technology Products & Multimedia Services",
+                    mention: "M1 completed",
                     annee: "2025"
                 }
             ],
@@ -5761,25 +6217,25 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 3,
-            name: "Multinational Higher School of Telecommunications",
+            name: "École Supérieure Multinationale de Télécom",
             country: "🇸🇳",
             type: "ecole",
             location: [14.700045339018606, -17.450999604044508],
             period: "2022 - 2023",
             diplomes: [
                 {
-                    nom: "Professional Degree in Network Administration and Security",
-                    mention: "Fairly Good Mention",
+                    nom: "Professional Bachelor's in Network Administration and Security",
+                    mention: "Fairly Good",
                     annee: "2023"
                 }
             ],
             description: "Training in cybersecurity and network administration",
             ville: "Dakar",
-            details: "Deepening of skills in information systems security and network infrastructure administration."
+            details: "Deepened skills in information systems security and network infrastructure administration."
         },
         {
             id: 4,
-            name: "Senegal-Japan Vocational and Technical Training Center",
+            name: "Centre de Formation Professionnel et Technique Sénégal-Japon",
             country: "🇸🇳",
             type: "centre",
             location: [14.742389230007147, -17.46926696213084],
@@ -5787,21 +6243,21 @@ document.addEventListener('DOMContentLoaded', function() {
             // TWO DIPLOMAS for this center!
             diplomes: [
                 {
-                    nom: "BTS in Industrial IT and Networking",
-                    mention: "Fairly Good Mention",
+                    nom: "BTS in Industrial IT and Networks",
+                    mention: "Fairly Good",
                     annee: "2022",
-                    details: "Full training in industrial IT, networks and maintenance of computer systems."
+                    details: "Comprehensive training in industrial IT, networks and maintenance of IT systems."
                 },
                 {
-                    nom: "Industrial Technician Certificate in Electromechanics",
-                    mention: "Passable Mention",
+                    nom: "Brevet de Technicien Industriel in Electromechanics",
+                    mention: "Passable",
                     annee: "2020",
                     details: "Technical training in electromechanics, automation and industrial maintenance."
                 }
             ],
             description: "Technical training in industrial IT and electromechanics",
             ville: "Dakar",
-            details: "Double training: first in electromechanics, then specialization in industrial IT and networks."
+            details: "Dual training: first in electromechanics, then specialization in industrial IT and networks."
         }
     ];
     
@@ -5825,7 +6281,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let diplomesHTML = `
                 <div class="popup-diplomes-multiple">
                     <p style="margin: 0 0 10px 0; font-weight: 600; color: #333;">
-                        <i class="fas fa-graduation-cap"></i> Diplomas obtained (${diplomes.length}) :
+                        <i class="fas fa-graduation-cap"></i> Diplomas obtained (${diplomes.length}):
                     </p>
                     <div style="display: flex; flex-direction: column; gap: 8px;">
             `;
@@ -5878,10 +6334,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: school.name
         }).addTo(markersGroup);
         
-        // Generate HTML for diplomas
+        // Generate diploma HTML
         const diplomesHTML = generateDiplomesHTML(school.diplomes);
         
-        // Enriched popup content with multiple diploma management
+        // Enriched popup content with multiple diploma handling
         const popupContent = `
             <div class="school-popup">
                 <div class="popup-header" style="background: linear-gradient(135deg, ${schoolColors[school.type] || '#e63946'}, ${school.type === 'centre' ? '#0056b3' : '#c1121f'});">
@@ -5959,14 +6415,14 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         
-        // Prevent clicks on legend from propagating to the map
+        // Prevent clicks on the legend from propagating to the map
         L.DomEvent.disableClickPropagation(div);
         return div;
     };
     
     legend.addTo(map);
     
-    // Adjust view to include all markers
+    // Adjust the view to include all markers
     if (schools.length > 0) {
         const bounds = L.latLngBounds(schools.map(s => s.location));
         map.fitBounds(bounds, { 
@@ -5975,7 +6431,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add custom zoom control
+    // Add a custom zoom control
     L.control.zoom({
         position: 'topright',
         zoomInTitle: 'Zoom in',
@@ -6035,18 +6491,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const title = button.getAttribute("data-title");
     const type = button.getAttribute("data-type");
     const videoSrc = button.getAttribute("data-video");
-    const websiteUrl = button.getAttribute("data-website"); // Retrieves the website URL
+    const websiteUrl = button.getAttribute("data-website"); // Retrieves the site URL
 
     // Clear previous content
     popupImage.style.display = 'none';
     
-    // Remove existing video
+    // Remove an existing video
     const existingVideo = document.getElementById('popup-video');
     if (existingVideo) {
         existingVideo.remove();
     }
     
-    // Remove existing button
+    // Remove an existing button
     const existingWebsiteBtn = document.getElementById('popup-website-btn');
     if (existingWebsiteBtn) {
         existingWebsiteBtn.remove();
@@ -6076,7 +6532,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     popupTitle.innerText = title;
 
-    // Add "View website" button if URL exists
+    // Add the "View website" button if the URL exists
     if (websiteUrl) {
         const websiteBtn = document.createElement('a');
         websiteBtn.id = 'popup-website-btn';
@@ -6118,14 +6574,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const descriptions = {
-        "My BTS project: Creating an e-commerce website for a company":
-            "Complete online sales site with cart, customer account, admin area and MySQL database.",
-        "My Master project: Mobile appointment booking app":
+        "My BTS project: Building an e-commerce website for a company":
+            "Complete online sales site with cart, customer account, admin space and MySQL database.",
+        "My Master's project: Mobile app for online appointment booking":
             "Flutter app allowing users to book a time slot in hotels or services.",
         "Description: Development of a metrology system based on Halcon":
-            "Design of a metrology system for dimensional control of industrial parts using Halcon software. Implementation of Halcon scripts for image analysis and defect identification.",
+            "Design of a metrology system for dimensional inspection of industrial parts using the Halcon software. Implementation of Halcon scripts for image analysis and defect identification.",
         "Description: Roomify – AI-assisted decoration app with augmented reality integration. (in progress)":
-            "Roomify is an AI-assisted decoration application. The user uploads a photo of their space, and the AI ​​offers personalized decoration suggestions. The integration of augmented reality will offer an immersive experience by allowing you to visualize the arrangements directly in the real environment."
+            "Roomify is an AI-assisted interior decoration application. The user uploads a photo of their space, and the AI offers personalized decoration suggestions. Augmented reality integration will provide an immersive experience by allowing users to visualize layouts directly in the real environment."
     };
 
     popupDescription.innerText = descriptions[title] || "Description to come.";
@@ -6135,18 +6591,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
    function closePopup() {
-    // Remove video if it exists
+    // Remove the video if it exists
     const existingVideo = document.getElementById('popup-video');
     if (existingVideo) {
         existingVideo.remove();
     }
     
-    // Re-display the image (for other projects)
+    // Show the image again (for other projects)
     popupImage.style.display = 'block';
     
     popup.style.display = "none";
 }
-// Close popup by clicking outside
+// Close the popup by clicking outside
 document.addEventListener('click', function(event) {
     if (popup.style.display === "flex" && event.target === popup) {
         closePopup();
@@ -6154,7 +6610,7 @@ document.addEventListener('click', function(event) {
 });
 </script>
 <script>
-    // For Diploma section
+    // For the Diploma section
     document.getElementById('toggle-diplome')?.addEventListener('click', () => {
         const box = document.getElementById('diplome-box');
         box.classList.toggle('show');
@@ -6162,7 +6618,7 @@ document.addEventListener('click', function(event) {
             box.classList.contains('show') ? "Hide ▲" : "Show ▼";
     });
 
-    // For Training section
+    // For the Education section
     document.getElementById('toggle-formation')?.addEventListener('click', () => {
         const box = document.getElementById('formation-box');
         box.classList.toggle('show');
@@ -6202,10 +6658,10 @@ function closeModal(id) {
             });
         });
     });
-    // Get all navigation links
+    // Gets all navigation links
 const navLinks = document.querySelectorAll('.aside .nav a');
 
-// Get all sections that have an id corresponding to the links
+// Gets all sections that have an id matching the links
 const sections = document.querySelectorAll('section[id]');
 
 function activateNavLinkOnScroll() {
@@ -6227,10 +6683,10 @@ function activateNavLinkOnScroll() {
   });
 }
 
-// Execute on scroll
+// Run on scroll
 window.addEventListener('scroll', activateNavLinkOnScroll);
 
-// Execute on load for initial state
+// Run on load for initial state
 window.addEventListener('load', activateNavLinkOnScroll);
 
 </script>
@@ -6268,7 +6724,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.toggle('aside-open');
         });
         
-        // Close menu by clicking on a link
+        // Close the menu when clicking on a link
         const navLinks = document.querySelectorAll('.aside .nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -6279,7 +6735,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Close menu by clicking outside
+        // Close the menu by clicking outside
         document.addEventListener('click', function(e) {
             if (window.innerWidth <= 991 && 
                 !aside.contains(e.target) && 
@@ -6312,7 +6768,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Menu clicked, open:', aside.classList.contains('open')); // Debug
         });
         
-        // Close menu by clicking on a link
+        // Close the menu when clicking on a link
         const navLinks = document.querySelectorAll('.aside .nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -6323,7 +6779,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Close menu by clicking outside
+        // Close the menu by clicking outside
         document.addEventListener('click', function(e) {
             if (window.innerWidth <= 991 && 
                 aside.classList.contains('open') &&
@@ -6338,7 +6794,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-<!-- Floating mobile menu -->
+<!-- Mobile floating menu -->
 <div class="floating-menu">
     <button class="floating-menu-btn" id="floatingMenuBtn">
         <i class="fas fa-bars"></i>
@@ -6370,7 +6826,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Overlay to close the menu -->
 <div class="menu-overlay" id="menuOverlay" onclick="closeFloatingMenu()"></div>
 <script>
-    // Improved version with finer scroll management
+    // Enhanced version with finer scroll handling
 const floatingMenu = document.querySelector('.floating-menu');
 const floatingMenuBtn = document.getElementById('floatingMenuBtn');
 const floatingMenuItems = document.getElementById('floatingMenuItems');
@@ -6438,7 +6894,7 @@ function handleScroll() {
     
     lastScrollTop = scrollTop;
     
-    // Show menu after scroll stop if at top
+    // Show the menu again after scrolling stops if at the top
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
         if (scrollTop < 50) {
@@ -6476,7 +6932,7 @@ document.querySelectorAll('.floating-menu-item[href^="#"]').forEach(link => {
     });
 });
 
-// Listen for scroll
+// Listen to scroll
 window.addEventListener('scroll', handleScroll, { passive: true });
 
 // Initialization
@@ -6484,18 +6940,18 @@ document.addEventListener('DOMContentLoaded', function() {
     showFloatingMenu();
 });
 
-// Show menu when touching the screen (for mobile)
+// Show the menu again when the screen is touched (for mobile)
 document.addEventListener('touchstart', function() {
     showFloatingMenu();
 });
 </script>
 <script>
-    // Centered apprenticeship banner management
+    // Management of the centered alternance banner
 document.addEventListener('DOMContentLoaded', function() {
     const banner = document.getElementById('alternance-banner');
     const reopenBtn = document.getElementById('banner-reopen');
     
-    // Create overlay
+    // Create the overlay
     const overlay = document.createElement('div');
     overlay.className = 'banner-overlay';
     document.body.appendChild(overlay);
@@ -6514,9 +6970,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (banner) {
             banner.classList.remove('show');
             overlay.classList.remove('show');
-            document.body.style.overflow = ''; // Reactivates scrolling
+            document.body.style.overflow = ''; // Re-enables scrolling
             
-            // Show reopen button after closing
+            // Show the reopen button after closing
             setTimeout(() => {
                 if (reopenBtn) {
                     reopenBtn.style.display = 'flex';
@@ -6525,10 +6981,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    // Close by clicking on overlay
+    // Close by clicking on the overlay
     overlay.addEventListener('click', closeBanner);
     
-    // Close with Escape key
+    // Close with the Escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && banner.classList.contains('show')) {
             closeBanner();
@@ -6548,7 +7004,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 3000);
 });
 </script>
-<!-- Script for info button -->
+<!-- Script for the info button -->
 <script>
 function toggleInfo() {
     const infoBox = document.getElementById('info-box');
@@ -6556,7 +7012,7 @@ function toggleInfo() {
         infoBox.classList.toggle('show');
     }
 }
-// Script for skills wheel
+// Script for the skills wheel
 document.addEventListener('DOMContentLoaded', function() {
     const wheel = document.getElementById('skillsWheel');
     if (!wheel) return;
@@ -6763,7 +7219,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (items.length > 0) init();
 });
-// Scroll animation for progress bars
+// Progress bar animation on scroll
 function animateProgressBars() {
     const progressBars = document.querySelectorAll('.progress-fill');
     
